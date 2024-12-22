@@ -36,7 +36,7 @@ const Navbar = () => {
           <summary className="text-lg bg-transparent">My Profile</summary>
           <ul className="menu dropdown-content bg-base-100 rounded-lg z-[1] w-52 shadow">
             <li>
-              <Link to='/myProfile'>Add Volunteer need Post</Link>
+              <Link to='/addVoNeedPost'>Add Volunteer need Post</Link>
             </li>
             <li>
               <Link>Manage My Posts </Link>

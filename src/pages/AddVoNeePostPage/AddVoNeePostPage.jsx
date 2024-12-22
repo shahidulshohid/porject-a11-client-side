@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import useAuth from "../../hook/useAuth";
+import axios from "axios";
+import { toast } from "react-toastify";
 
 const AddVoNeePostPage = () => {
   const { user } = useAuth();
   const [startDate, setStartDate] = useState(new Date());
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
     const form = e.target;
     const thumbnail = form.thumbnail.value;
@@ -19,7 +21,7 @@ const AddVoNeePostPage = () => {
     const name = form.name.value;
     const email = form.email.value;
     const description = form.description.value;
-    console.log(
+    const formData = {
       thumbnail,
       title,
       category,
@@ -29,10 +31,23 @@ const AddVoNeePostPage = () => {
       name,
       email,
       description
-    );
+  };
+    // make a post request 
+    try {
+      await axios.post(`${import.meta.env.VITE_API_URL}/add-volunteer-post`, formData)
+      form.reset()
+      toast.success('Data added successfully', {
+        position:'top-center'
+      })
+    } catch (error) {
+      toast.error('Something went wrong', {
+        position:'top-center'
+      })
+    }
   };
   return (
-    <div className="py-24 mx-4 lg:mx-0">
+    <div className="py-12 mx-4 lg:mx-0">
+      <h3 className="text-center my-3 text-3xl text-white">Add volunteer need post page </h3>
       <form onSubmit={handleSubmit}>
       <div className="lg:flex gap-3">
         <div className="w-full">
@@ -146,8 +161,8 @@ const AddVoNeePostPage = () => {
         ></textarea>
       </div>
       <div className="flex justify-end mt-6">
-        <button className="disabled:cursor-not-allowed px-8 py-2.5 leading-5 text-white transition-colors duration-300 transhtmlForm bg-gray-700 rounded-md hover:bg-gray-600 focus:outline-none focus:bg-gray-600">
-          Save
+        <button className="disabled:cursor-not-allowed px-8 py-2.5 leading-5 text-black text-xl transition-colors duration-300 transhtmlForm bg-amber-200 rounded-md hover:bg-amber-200 focus:outline-none focus:bg-amber-200 w-full">
+        Add Post
         </button>
       </div>
       </form>
