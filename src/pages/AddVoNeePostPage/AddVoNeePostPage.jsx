@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import useAuth from "../../hook/useAuth";
@@ -8,6 +8,9 @@ import { toast } from "react-toastify";
 const AddVoNeePostPage = () => {
   const { user } = useAuth();
   const [startDate, setStartDate] = useState(new Date());
+  useEffect(()=> {
+    document.title = 'Add volunteer need post page | Volunteer management'
+  })
 
   const handleSubmit = async(e) => {
     e.preventDefault();

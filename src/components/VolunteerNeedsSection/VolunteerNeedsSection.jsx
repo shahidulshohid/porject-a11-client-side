@@ -5,6 +5,7 @@ import ShowVolunteerNeedsSection from "../ShowVolunteerNeedsSection/ShowVoluntee
 const VolunteerNeedsSection = () => {
     const [volunteerNeedsData, setVolunteerNeedsData] = useState([])
     useEffect(()=> {
+      document.title = 'Volunteer Details page | Volunteer management'
         const fetchVolunteerNeedsData = async() => {
           const {data} = await axios.get(`${import.meta.env.VITE_API_URL}/volunteer-needs`)
           setVolunteerNeedsData(data)

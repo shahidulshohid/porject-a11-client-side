@@ -1,5 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "../pages/Shared/Navbar";
+import FooterPage from "../pages/Shared/FooterPage";
 
 const MainLayout = () => {
     return (
@@ -7,6 +8,7 @@ const MainLayout = () => {
         <div className="max-w-7xl mx-auto">
             <Navbar></Navbar>
             <Outlet></Outlet>
+            <FooterPage></FooterPage>
         </div>
         </div>
     );

@@ -9,6 +9,7 @@ const VolunteerNeedDetailsPage = () => {
   const [volunteerNeedsDetails, setVolunteerNeedsDetails] = useState({});
 
   useEffect(() => {
+    document.title = 'Volunteer need details page | Volunteer management'
     fetchJobData();
   }, [id]);
 
@@ -37,7 +38,7 @@ const VolunteerNeedDetailsPage = () => {
           <p>Name: {volunteerNeedsDetails.name}</p>
           <p>Location: {volunteerNeedsDetails.location}</p>
           <div>
-          <Link to='/beAVolunteer'>
+          <Link to={`/beAVolunteer/${id}`}>
             <button className="text-lg bg-green-500 py-2 px-4 rounded-lg mt-2 text-black">
             Be a Volunteer
             </button>

@@ -9,11 +9,13 @@ import { useParams } from "react-router-dom";
 const BeAVolunteerPage = () => {
   const { user } = useAuth();
   const [startDate, setStartDate] = useState(new Date());
-  const {id} = useParams()
+  const { id } = useParams();
+  console.log(id);
 
-  const [beVolunteer, setBeVolunteer] = useState({});
+  const [volunteerNeedsDetails, setVolunteerNeedsDetails] = useState({});
 
   useEffect(() => {
+    document.title = 'Be a volunteer page | Volunteer management'
     fetchJobData();
   }, [id]);
 
@@ -21,9 +23,9 @@ const BeAVolunteerPage = () => {
     const { data } = await axios.get(
       `${import.meta.env.VITE_API_URL}/be-volunteer/${id}`
     );
-    setBeVolunteer(data);
-  }
-  console.log(beVolunteer)
+    setVolunteerNeedsDetails(data);
+  };
+  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -78,7 +80,8 @@ const BeAVolunteerPage = () => {
             <input
               name="thumbnail"
               type="text"
-            //   defaultValue={volunteerNeedsData.thumbnail}
+              defaultValue={volunteerNeedsDetails.thumbnail}
+              disabled
               className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring"
             />
           </div>
@@ -89,8 +92,8 @@ const BeAVolunteerPage = () => {
             <input
               name="title"
               type="text"
-              //   placeholder="Post Title"
-            //   defaultValue={volunteerNeedsData.title}
+              defaultValue={volunteerNeedsDetails.title}
+              disabled
               className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring"
             />
           </div>
@@ -101,7 +104,12 @@ const BeAVolunteerPage = () => {
               <label className="text-gray-700" htmlFor="category">
                 Category
               </label>
-              <select name="category" className="border p-2 rounded-md">
+              <select
+                name="category"
+                disabled
+                defaultValue={volunteerNeedsDetails.category}
+                className="border p-2 rounded-md bg-white"
+              >
                 <option value="Healthcare">Healthcare</option>
                 <option value="Education">Education</option>
                 <option value="Social service">Social service</option>
@@ -116,7 +124,8 @@ const BeAVolunteerPage = () => {
             <input
               name="location"
               type="text"
-              placeholder="Location"
+              defaultValue={volunteerNeedsDetails.location}
+              disabled
               className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring"
             />
           </div>
@@ -129,7 +138,7 @@ const BeAVolunteerPage = () => {
             <input
               name="number"
               type="number"
-              placeholder="No. of volunteers needed "
+              defaultValue={volunteerNeedsDetails.number}
               className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring"
             />
           </div>
@@ -139,17 +148,46 @@ const BeAVolunteerPage = () => {
 
               {/* Date Picker Input Field */}
               <DatePicker
-                className="border p-2 rounded-md w-full"
+                className="border p-2 rounded-md w-full bg-white"
                 selected={startDate}
+                disabled
                 onChange={(date) => setStartDate(date)}
               />
             </div>
           </div>
         </div>
+        {/* Organizer name and email */}
         <div className="lg:flex gap-3">
           <div className="w-full">
             <label className="text-gray-700 " htmlFor="job_title">
               Organizer Name
+            </label>
+            <input
+              name="name"
+              type="text"
+              defaultValue={volunteerNeedsDetails.name}
+              disabled
+              className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring"
+            />
+          </div>
+          <div className="w-full">
+            <label className="text-gray-700 " htmlFor="job_title">
+              Organizer Email
+            </label>
+            <input
+              name="email"
+              type="email"
+              defaultValue={volunteerNeedsDetails.email}
+              disabled
+              className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring"
+            />
+          </div>
+        </div>
+        {/* volunteer and email */}
+        <div className="lg:flex gap-3">
+          <div className="w-full">
+            <label className="text-gray-700 " htmlFor="job_title">
+              Volunteer Name
             </label>
             <input
               name="name"
@@ -161,7 +199,7 @@ const BeAVolunteerPage = () => {
           </div>
           <div className="w-full">
             <label className="text-gray-700 " htmlFor="job_title">
-              Organizer Email
+              Volunteer Email
             </label>
             <input
               name="email"
@@ -177,6 +215,8 @@ const BeAVolunteerPage = () => {
             Description
           </label>
           <textarea
+            defaultValue={volunteerNeedsDetails.description}
+            disabled
             className="block w-full px-4 py-2 mt-2 text-gray-700 bg-white border border-gray-200 rounded-md  focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40  focus:outline-none focus:ring"
             name="description"
             id="description"
@@ -184,7 +224,7 @@ const BeAVolunteerPage = () => {
         </div>
         <div className="flex justify-end mt-6">
           <button className="disabled:cursor-not-allowed px-8 py-2.5 leading-5 text-black text-xl transition-colors duration-300 transhtmlForm bg-amber-200 rounded-md hover:bg-amber-200 focus:outline-none focus:bg-amber-200 w-full">
-            Add Post
+            Request
           </button>
         </div>
       </form>

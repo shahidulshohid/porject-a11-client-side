@@ -9,6 +9,7 @@ const AllVoNeePostPage = () => {
 
   useEffect(() => {
     const fetchVolunteerNeedsData = async () => {
+      document.title = 'All volunteer need Post page | Volunteer management'
       const { data } = await axios.get(
         `${import.meta.env.VITE_API_URL}/all-volunteer-needs?search=${search}`
       );
@@ -23,7 +24,7 @@ const AllVoNeePostPage = () => {
   return (
     <div className="my-12">
       <div className="flex justify-between items-center">
-        <h3 className="text-3xl text-white font-bold">All Volunteer Needs Post</h3>
+        <h3 className="hidden md:flex text-3xl text-white font-bold">All Volunteer Needs Post</h3>
         <div className="flex p-1 overflow-hidden focus-within:ring-opacity-40 focus-within:border-blue-400 focus-within:ring-blue-300">
           <input
             className="px-6 py-2 text-gray-700 placeholder-gray-500 bg-white outline-none focus:placeholder-transparent rounded-l-md"

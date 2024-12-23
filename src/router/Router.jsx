@@ -33,7 +33,7 @@ const router = createBrowserRouter([
                 element:<VolunteerNeedDetailsPage></VolunteerNeedDetailsPage>
             },
             {
-                path:'/beAVolunteer',
+                path:'/beAVolunteer/:id',
                 element:<BeAVolunteerPage></BeAVolunteerPage>
             },
             {
