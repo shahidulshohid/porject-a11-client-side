@@ -22,9 +22,9 @@ const VolunteerNeedDetailsPage = () => {
 
   return (
     <div className="py-12">
-      <div className="bg-white rounded-xl p-4 w-1/2 mx-auto">
+      <div className="bg-white rounded-xl p-4 lg:w-1/2 mx-auto">
         <div className="w-full">
-          <img className="rounded-t-xl mb-4" src={volunteerNeedsDetails.thumbnail} alt="" />
+          <img className="rounded-t-xl mb-4 w-full" src={volunteerNeedsDetails.thumbnail} alt="" />
         </div>
         <div className="space-y-1">
           <h3 className="text-xl font-semibold">Title: {volunteerNeedsDetails.title}</h3>

@@ -4,12 +4,12 @@ import HomePage from "../pages/HomePage/HomePage";
 import Register from "../pages/Register/Register";
 import SignIn from "../pages/SignIn/SignIn";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
-import MyProfilePage from "../pages/MyProfilePage/MyProfilePage";
 import AllVoNeePostPage from "../pages/AllVoNeePostPage/AllVoNeePostPage";
 import AddVoNeePostPage from "../pages/AddVoNeePostPage/AddVoNeePostPage";
 import VolunteerNeedDetailsPage from "../pages/VolunteerNeedDetialsPage/VolunteerNeedDetailsPage";
 import BeAVolunteerPage from "../pages/BeAVolunteerPage/BeAVolunteerPage";
 import PrivateRoute from "./PrivateRoute";
+import ManageMyPostPage from "../pages/ManageMyPostPage/ManageMyPostPage";
 
 const router = createBrowserRouter([
     {
@@ -38,8 +38,8 @@ const router = createBrowserRouter([
                 element:<BeAVolunteerPage></BeAVolunteerPage>
             },
             {
-                path:'/myProfile',
-                element:<MyProfilePage></MyProfilePage>
+                path:'/manageMyPost',
+                element:<ManageMyPostPage></ManageMyPostPage>
             },
             {
                 path:'/register',
