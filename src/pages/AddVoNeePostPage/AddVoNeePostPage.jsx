@@ -19,7 +19,7 @@ const AddVoNeePostPage = () => {
     const title = form.title.value;
     const category = form.category.value;
     const location = form.location.value;
-    const number = form.number.value;
+    const number = parseInt(form.number.value);
     const deadline = startDate;
     const name = form.name.value;
     const email = form.email.value;

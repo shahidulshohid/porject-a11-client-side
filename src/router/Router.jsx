@@ -9,6 +9,7 @@ import AllVoNeePostPage from "../pages/AllVoNeePostPage/AllVoNeePostPage";
 import AddVoNeePostPage from "../pages/AddVoNeePostPage/AddVoNeePostPage";
 import VolunteerNeedDetailsPage from "../pages/VolunteerNeedDetialsPage/VolunteerNeedDetailsPage";
 import BeAVolunteerPage from "../pages/BeAVolunteerPage/BeAVolunteerPage";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
             },
             {
                 path:'addVoNeedPost',
-                element:<AddVoNeePostPage></AddVoNeePostPage>
+                element:<PrivateRoute><AddVoNeePostPage></AddVoNeePostPage></PrivateRoute>
             },
             {
                 path:'/volunteerNeedDetails/:id',

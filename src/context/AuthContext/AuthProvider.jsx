@@ -18,17 +18,20 @@ const AuthProvider = ({ children }) => {
 
   //create user
   const createUser = (email, password) => {
+    setLoading(true)
     setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
 
   //sign user
   const signInUser = (email, password) => {
+    setLoading(true)
     return signInWithEmailAndPassword(auth, email, password);
   };
 
   //manage profile
   const manageProfile = (name, image) => {
+    setLoading(true)
     return updateProfile(auth.currentUser, {
       displayName: name,
       photoURL: image,
