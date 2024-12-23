@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import useAuth from "../../hook/useAuth";
 import axios from "axios";
+import ShowManageData from "../ShowManageData/ShowManageData";
+import FooterPage from "../Shared/FooterPage";
 
 const ManageMyPostPage = () => {
   const { user } = useAuth();
@@ -28,21 +30,18 @@ const ManageMyPostPage = () => {
             {/* head */}
             <thead>
               <tr>
-                <th className="text-black text-lg">Photo</th>
+                <th className="text-black text-lg hidden lg:flex">Photo</th>
                 <th className="text-black text-lg">Title</th>
-                <th className="text-black text-lg">Name</th>
-                <th className="text-black text-lg hidden lg:flex">Email</th>
+                <th className="text-black text-lg hidden lg:flex">Name</th>
+                <th className="text-black text-lg">Email</th>
+                <th className="text-black text-lg">Action</th>
               </tr>
             </thead>
             <tbody>
-              {/* {myReviewsData?.map((reviewData) => (
-                <MyReviewTable
-                  key={reviewData._id}
-                  reviewData={reviewData}
-                  myReviewsData={myReviewsData}
-                  setMyReviewsData={setMyReviewsData}
-                ></MyReviewTable>
-              ))} */}
+              {/* {
+                manageData ? (manageData?.map(data => <ShowManageData key={data._id}></ShowManageData>)) : (
+                )
+              } */}
             </tbody>
           </table>
         </div>
