@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import errorImg from "../../assets/errorImg.jpg";
 const ErrorPage = () => {
   return (
@@ -10,7 +11,7 @@ const ErrorPage = () => {
         />
       </div>
       <div className="text-center">
-      <button className=" bg-[#E972A0] text-2xl px-4 py-3 rounded-xl mt-4">Back to Home</button>
+      <Link to='/'><button className=" bg-[#E972A0] text-2xl px-4 py-3 rounded-xl mt-4">Back to Home</button></Link>
       </div>
     </div>
   );

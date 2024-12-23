@@ -46,7 +46,7 @@ const AddVoNeePostPage = () => {
     }
   };
   return (
-    <div className="py-12 mx-4 lg:mx-0">
+    <div className="my-12 mx-4 lg:mx-0">
       <h3 className="text-center my-3 text-3xl text-white">Add volunteer need post page </h3>
       <form onSubmit={handleSubmit}>
       <div className="lg:flex gap-3">

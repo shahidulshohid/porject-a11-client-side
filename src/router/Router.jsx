@@ -7,6 +7,8 @@ import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import MyProfilePage from "../pages/MyProfilePage/MyProfilePage";
 import AllVoNeePostPage from "../pages/AllVoNeePostPage/AllVoNeePostPage";
 import AddVoNeePostPage from "../pages/AddVoNeePostPage/AddVoNeePostPage";
+import VolunteerNeedDetailsPage from "../pages/VolunteerNeedDetialsPage/VolunteerNeedDetailsPage";
+import BeAVolunteerPage from "../pages/BeAVolunteerPage/BeAVolunteerPage";
 
 const router = createBrowserRouter([
     {
@@ -25,6 +27,14 @@ const router = createBrowserRouter([
             {
                 path:'addVoNeedPost',
                 element:<AddVoNeePostPage></AddVoNeePostPage>
+            },
+            {
+                path:'/volunteerNeedDetails/:id',
+                element:<VolunteerNeedDetailsPage></VolunteerNeedDetailsPage>
+            },
+            {
+                path:'/beAVolunteer',
+                element:<BeAVolunteerPage></BeAVolunteerPage>
             },
             {
                 path:'/myProfile',
