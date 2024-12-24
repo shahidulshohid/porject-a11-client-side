@@ -10,6 +10,7 @@ import VolunteerNeedDetailsPage from "../pages/VolunteerNeedDetialsPage/Voluntee
 import BeAVolunteerPage from "../pages/BeAVolunteerPage/BeAVolunteerPage";
 import PrivateRoute from "./PrivateRoute";
 import ManageMyPostPage from "../pages/ManageMyPostPage/ManageMyPostPage";
+import UpdateManageProfileData from "../pages/UpdateManageMyProfileData/UpdateManageProfileData";
 
 const router = createBrowserRouter([
     {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
             {
                 path:'/manageMyPost',
                 element:<ManageMyPostPage></ManageMyPostPage>
+            },
+            {
+                path:'/updateManagePost/:id',
+                element:<UpdateManageProfileData></UpdateManageProfileData>
             },
             {
                 path:'/register',

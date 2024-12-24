@@ -57,7 +57,7 @@ const ShowManageData = ({ data, manageData, setManageData }) => {
         <th className="hidden lg:flex">{email}</th>
         <th>{title}</th>
         <td className="flex gap-2">
-          <Link to={`updateManagePost/$(_id)`}>
+          <Link to={`/updateManagePost/${_id}`}>
             <button className="bg-green-500 px-2 py-1 md:px-4 md:py-2 rounded text-white lg:text-lg">
               <FaRegEdit />
             </button>

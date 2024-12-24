@@ -7,7 +7,7 @@ const ShowVolunteerNeedsSection = ({ data }) => {
   return (
     <div className="bg-white rounded-xl p-4">
       <div className="w-full">
-        <img className="rounded-t-xl mb-4 w-full" src={thumbnail} alt="" />
+        <img className="rounded-t-xl mb-4 w-full h-[280px]" src={thumbnail} alt="" />
       </div>
       <div className="space-y-1">
         <h3 className="text-xl font-semibold">Title: {title}</h3>
