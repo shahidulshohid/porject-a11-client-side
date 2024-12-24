@@ -32,7 +32,7 @@ const router = createBrowserRouter([
             },
             {
                 path:'/volunteerNeedDetails/:id',
-                element:<VolunteerNeedDetailsPage></VolunteerNeedDetailsPage>
+                element:<PrivateRoute><VolunteerNeedDetailsPage></VolunteerNeedDetailsPage></PrivateRoute>
             },
             {
                 path:'/beAVolunteer/:id',
@@ -40,7 +40,7 @@ const router = createBrowserRouter([
             },
             {
                 path:'/manageMyPost',
-                element:<ManageMyPostPage></ManageMyPostPage>
+                element:<PrivateRoute><ManageMyPostPage></ManageMyPostPage></PrivateRoute>
             },
             {
                 path:'/updateManagePost/:id',

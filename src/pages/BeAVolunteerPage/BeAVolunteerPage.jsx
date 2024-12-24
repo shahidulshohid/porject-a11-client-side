@@ -31,12 +31,21 @@ const BeAVolunteerPage = () => {
     e.preventDefault();
     const form = e.target;
     const suggestion = form.suggestion.value
+    const number = form.number.value
     const volunteerId = id
+    
+    if (number === "" || parseInt(number) === 0) {
+      return toast.error("No. of volunteers needed cannot be 0 or empty", {
+        position: "top-center",
+      });
+    }
+
     const formData = {
       suggestion,
       status:'requested',
       volunteerId,
     };
+
     // make a post request
     try {
       const {data} = await axios.post(

@@ -50,7 +50,7 @@ const UpdateManageProfileData = () => {
       email,
       description
     };
-    
+
     // make a post request
     try {
       const {data} = await axios.put(
@@ -58,7 +58,7 @@ const UpdateManageProfileData = () => {
         formData
       );
       form.reset();
-      toast.success("Data added successfully", {
+      toast.success("Data update successfully", {
         position: "top-center",
       });
       console.log(data)

@@ -36,10 +36,27 @@ const Navbar = () => {
           <summary className="text-lg bg-transparent">My Profile</summary>
           <ul className="menu dropdown-content bg-base-100 rounded-lg z-[1] w-52 shadow">
             <li>
-              <Link to='/addVoNeedPost'>Add Volunteer need Post</Link>
+              <Link to="/addVoNeedPost">Add Volunteer need Post</Link>
             </li>
             <li>
-              <Link to='/manageMyPost'>Manage My Posts </Link>
+              {/* <Link to='/manageMyPost'>Manage My Posts </Link> */}
+
+              <div className="dropdown dropdown-hover bottom-50">
+                <div tabIndex={0} role="button" className="m-1">
+                Manage My Posts
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content menu bg-base-100 left-0 mt-32 rounded-box z-[1] w-52 p-2 shadow"
+                >
+                  <li>
+                    <Link to='/manageMyPost'>Manage My Posts </Link>
+                  </li>
+                  <li>
+                    <a>Item 2</a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </details>
@@ -108,7 +125,11 @@ const Navbar = () => {
         {user && (
           <div className="ml-5 dropdown dropdown-hover">
             <div tabIndex={0} className="m-1">
-              <img className="w-12 h-12 rounded-full" src={user?.photoURL} alt="" />
+              <img
+                className="w-12 h-12 rounded-full"
+                src={user?.photoURL}
+                alt=""
+              />
             </div>
             <ul
               tabIndex={0}

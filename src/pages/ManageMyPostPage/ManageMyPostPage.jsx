@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import useAuth from "../../hook/useAuth";
 import axios from "axios";
 import ShowManageData from "../ShowManageData/ShowManageData";
-import FooterPage from "../Shared/FooterPage";
 
 const ManageMyPostPage = () => {
   const { user } = useAuth();
+
+  //fetch My volunteer need post
   const [manageData, setManageData] = useState([]);
   useEffect(() => {
     fetchManageData();
@@ -19,10 +20,11 @@ const ManageMyPostPage = () => {
     );
     setManageData(data);
   };
+  
   return (
     <div className="my-12">
       <h3 className="text-4xl text-center text-white font-bold mb-6">
-        Manage My post
+      My volunteer need post
       </h3>
       <div className="bg-[#F4F3F0] rounded-xl py-6 lg:w-8/12 mx-auto">
         <div className="overflow-x-auto ">
