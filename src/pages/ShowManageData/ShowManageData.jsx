@@ -2,16 +2,18 @@ import { FaRegEdit } from "react-icons/fa";
 import { AiOutlineDelete } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
+import axios from "axios";
 
-const ShowManageData = ({ data, ShowManageData, setShowManageData }) => {
+const ShowManageData = ({ data, manageData, setManageData }) => {
   const { _id, thumbnail, name, email, title } = data;
 
   const handleDelete = async (id) => {
     try {
-      const { data } = await axios.delete(`/deleteManageData/${id}`);
+      const { data } = await axios.delete(`${import.meta.env.VITE_API_URL}/deleteManageData/${id}`);
       console.log(data);
       toast.success("Data deleted successfully!!!!!");
-      fetchAllJobs();
+      const filter = manageData?.filter(fil => fil._id !== id)
+      setManageData(filter)
     } catch (error) {
       console.log(error.message);
       toast.error(error.message);
