@@ -39,24 +39,7 @@ const Navbar = () => {
               <Link to="/addVoNeedPost">Add Volunteer need Post</Link>
             </li>
             <li>
-              {/* <Link to='/manageMyPost'>Manage My Posts </Link> */}
-
-              <div className="dropdown dropdown-hover bottom-50">
-                <div tabIndex={0} role="button" className="m-1">
-                Manage My Posts
-                </div>
-                <ul
-                  tabIndex={0}
-                  className="dropdown-content menu bg-base-100 left-0 mt-32 rounded-box z-[1] w-52 p-2 shadow"
-                >
-                  <li>
-                    <Link to='/manageMyPost'>Manage My Posts </Link>
-                  </li>
-                  <li>
-                    <a>Item 2</a>
-                  </li>
-                </ul>
-              </div>
+              <Link to='/manageMyPost'>Manage My Posts </Link>
             </li>
           </ul>
         </details>
