@@ -10,7 +10,6 @@ const ShowManageData = ({ data, manageData, setManageData }) => {
   const handleDelete = async (id) => {
     try {
       const { data } = await axios.delete(`${import.meta.env.VITE_API_URL}/deleteManageData/${id}`);
-      console.log(data);
       toast.success("Data deleted successfully!!!!!");
       const filter = manageData?.filter(fil => fil._id !== id)
       setManageData(filter)
@@ -58,7 +57,7 @@ const ShowManageData = ({ data, manageData, setManageData }) => {
         <th className="hidden lg:flex">{email}</th>
         <th>{title}</th>
         <td className="flex gap-2">
-          <Link>
+          <Link to={`updateManagePost/$(_id)`}>
             <button className="bg-green-500 px-2 py-1 md:px-4 md:py-2 rounded text-white lg:text-lg">
               <FaRegEdit />
             </button>
