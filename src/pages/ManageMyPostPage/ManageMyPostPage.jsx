@@ -20,35 +20,85 @@ const ManageMyPostPage = () => {
     );
     setManageData(data);
   };
-  
+
   return (
     <div className="my-12">
-      <h3 className="text-4xl text-center text-white font-bold mb-6">
-      My volunteer need post
-      </h3>
-      <div className="bg-[#F4F3F0] rounded-xl py-6 lg:w-8/12 mx-auto">
-        <div className="overflow-x-auto ">
-          <table className="table">
-            {/* head */}
-            <thead>
-              <tr>
-                <th className="text-black text-lg">Photo</th>
-                <th className="text-black text-lg hidden lg:flex">Email</th>
-                <th className="text-black text-lg">Title</th>
-                <th className="text-black text-lg">Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              {
-                manageData?.map(data => <ShowManageData key={data._id} data={data} manageData={manageData} setManageData={setManageData}></ShowManageData>)
-              } 
-            </tbody>
-          </table>
+      {/* first section  */}
+      <section>
+        <h3 className="text-4xl text-center text-white font-bold mb-6">
+          My volunteer need post
+        </h3>
+        <div className="bg-[#F4F3F0] rounded-xl py-6 lg:w-8/12 mx-auto">
+          <div className="overflow-x-auto ">
+            <table className="table">
+              {/* head */}
+              <thead>
+                <tr>
+                  <th className="text-black text-lg">Photo</th>
+                  <th className="text-black text-lg hidden lg:flex">Email</th>
+                  <th className="text-black text-lg">Title</th>
+                  <th className="text-black text-lg">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                {manageData?.map((data) => (
+                  <ShowManageData
+                    key={data._id}
+                    data={data}
+                    manageData={manageData}
+                    setManageData={setManageData}
+                  ></ShowManageData>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {manageData.length === 0 ? (
+            <h1 className="text-center text-6xl font-bold text-purple-600 my-24">
+              Manage My Data is Empty
+            </h1>
+          ) : (
+            " "
+          )}
         </div>
-        {
-          manageData.length === 0 ? <h1 className="text-center text-6xl font-bold text-purple-600 my-24">Manage My Data is Empty</h1> : " "
-        }
-      </div>
+      </section>
+      {/* second section  */}
+      <section className="mt-12">
+        <h3 className="text-4xl text-center text-white font-bold mb-6">
+        My Volunteer Request Post
+        </h3>
+        <div className="bg-[#F4F3F0] rounded-xl py-6 lg:w-8/12 mx-auto">
+          <div className="overflow-x-auto ">
+            <table className="table">
+              {/* head */}
+              <thead>
+                <tr>
+                  <th className="text-black text-lg">Photo</th>
+                  <th className="text-black text-lg hidden lg:flex">Email</th>
+                  <th className="text-black text-lg">Title</th>
+                  <th className="text-black text-lg">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                {manageData?.map((data) => (
+                  <ShowManageData
+                    key={data._id}
+                    data={data}
+                    manageData={manageData}
+                    setManageData={setManageData}
+                  ></ShowManageData>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {manageData.length === 0 ? (
+            <h1 className="text-center text-6xl font-bold text-purple-600 my-24">
+              Manage My Data is Empty
+            </h1>
+          ) : (
+            " "
+          )}
+        </div>
+      </section>
     </div>
   );
 };

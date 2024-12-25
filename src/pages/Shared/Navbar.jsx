@@ -47,7 +47,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="navbar bg-base-100 sticky top-0 z-50">
+    <div className="navbar bg-green-300 sticky top-0 lg:py-4 z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -87,7 +87,7 @@ const Navbar = () => {
       </div>
       <div className="navbar-end">
         <button
-          className="bg-gray-300 w-8 h-8 md:w-10 md:h-10 flex justify-center items-center rounded-full"
+          className="bg-white w-8 h-8 md:w-10 md:h-10 flex justify-center items-center rounded-full"
           onClick={handleThemeSwitch}
         >
           {theme === "dark" ? (
@@ -101,7 +101,7 @@ const Navbar = () => {
           )}
         </button>
         {!user && (
-          <Link className="ml-5 text-xl btn" to="/signIn">
+          <Link className="ml-5 text-xl btn bg-[#571214] text-white" to="/signIn">
             <button>Login</button>
           </Link>
         )}

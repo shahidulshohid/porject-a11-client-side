@@ -10,7 +10,6 @@ const BeAVolunteerPage = () => {
   const { user } = useAuth();
   const [startDate, setStartDate] = useState(new Date());
   const { id } = useParams();
-  console.log(id);
 
   const [volunteerNeedsDetails, setVolunteerNeedsDetails] = useState({});
 
@@ -30,8 +29,16 @@ const BeAVolunteerPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const form = e.target;
-    const suggestion = form.suggestion.value
+    const thumbnail = form.thumbnail.value 
+    const title = form.title.value 
+    const category = form.category.value 
+    const location = form.location.value 
     const number = form.number.value
+    const deadline = startDate
+    const description = form.description.value
+    const name = user?.name 
+    const email = user?.email
+    const suggestion = form.suggestion.value
     const volunteerId = id
     
     if (number === "" || parseInt(number) === 0) {
@@ -41,6 +48,14 @@ const BeAVolunteerPage = () => {
     }
 
     const formData = {
+      thumbnail, 
+      title,
+      category,
+      location, 
+      name,
+      email,
+      deadline,
+      description,
       suggestion,
       status:'requested',
       volunteerId,
@@ -53,7 +68,7 @@ const BeAVolunteerPage = () => {
         formData
       );
       form.reset();
-      toast.success("Data added successfully", {
+      toast.success("Be volunteer request is successfully", {
         position: "top-center",
       });
       console.log(data)
