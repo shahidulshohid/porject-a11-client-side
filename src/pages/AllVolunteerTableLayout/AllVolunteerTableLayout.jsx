@@ -1,5 +1,7 @@
-const AllVolunteerTableLayout = ({data}) => {
-    const {thumbnail, title, email, name} = data
+import { Link } from "react-router-dom";
+
+const AllVolunteerTableLayout = ({ data }) => {
+  const { _id, thumbnail, title, email, name } = data;
   return (
     <>
       <tr>
@@ -8,7 +10,13 @@ const AllVolunteerTableLayout = ({data}) => {
         </th>
         <th>{title}</th>
         <th className="hidden lg:flex">{email}</th>
-        <th>{name}</th>
+        <th>
+          <Link to={`/volunteerNeedDetails/${_id}`}>
+            <button className="text-lg bg-green-500 py-1 md:py-2 px-2 md:px-4 rounded-lg mt-2 text-black">
+              Details
+            </button>
+          </Link>
+        </th>
       </tr>
     </>
   );

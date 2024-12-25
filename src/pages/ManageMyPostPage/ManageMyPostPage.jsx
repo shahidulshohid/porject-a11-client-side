@@ -2,9 +2,12 @@ import { useEffect, useState } from "react";
 import useAuth from "../../hook/useAuth";
 import axios from "axios";
 import ShowManageData from "../ShowManageData/ShowManageData";
+import MyVolunteerRequestPost from '../MyVolunteerRequestPost/MyVolunteerRequestPost'
+import useAxiosSecure from "../../hook/useAxiosSecure";
 
 const ManageMyPostPage = () => {
   const { user } = useAuth();
+  const axiosSecure = useAxiosSecure()
 
   //fetch My volunteer need post
   const [manageData, setManageData] = useState([]);
@@ -15,8 +18,7 @@ const ManageMyPostPage = () => {
   console.log(manageData);
 
   const fetchManageData = async () => {
-    const { data } = await axios.get(
-      `${import.meta.env.VITE_API_URL}/getManageData/${user?.email}`
+    const { data } = await axiosSecure.get(`/getManageData/${user?.email}`
     );
     setManageData(data);
   };
@@ -27,7 +29,6 @@ const ManageMyPostPage = () => {
     fetchRequestData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
-  console.log(manageData);
 
   const fetchRequestData = async () => {
     const { data } = await axios.get(
@@ -89,25 +90,25 @@ const ManageMyPostPage = () => {
                 <tr>
                   <th className="text-black text-lg">Photo</th>
                   <th className="text-black text-lg hidden lg:flex">Email</th>
-                  <th className="text-black text-lg">Title</th>
+                  <th className="text-black text-lg">Status</th>
                   <th className="text-black text-lg">Action</th>
                 </tr>
               </thead>
               <tbody>
-                {manageData?.map((data) => (
-                  <ShowManageData
-                    key={data._id}
-                    data={data}
-                    manageData={manageData}
-                    setManageData={setManageData}
-                  ></ShowManageData>
+                {requestData?.map((data) => (
+                  <MyVolunteerRequestPost
+                  key={data._id}
+                  data={data}
+                  requestData={requestData}
+                  setRequestData={setRequestData}
+                  ></MyVolunteerRequestPost>
                 ))}
               </tbody>
             </table>
           </div>
-          {manageData.length === 0 ? (
+          {requestData.length === 0 ? (
             <h1 className="text-center text-6xl font-bold text-purple-600 my-24">
-              My Volunteer Request Post is Empty
+              My Volunteer Request post is Empty
             </h1>
           ) : (
             " "

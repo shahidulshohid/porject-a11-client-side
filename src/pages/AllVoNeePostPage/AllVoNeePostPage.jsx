@@ -79,7 +79,7 @@ const AllVoNeePostPage = () => {
                     <th className="text-black text-lg">Photo</th>
                     <th className="text-black text-lg">Title</th>
                     <th className="text-black text-lg hidden lg:flex">Email</th>
-                    <th className="text-black text-lg">Name</th>
+                    <th className="text-black text-lg">Action</th>
                   </tr>
                 </thead>
                 <tbody>
