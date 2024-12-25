@@ -21,6 +21,21 @@ const ManageMyPostPage = () => {
     setManageData(data);
   };
 
+  //fetch My Volunteer Request Post
+  const [requestData, setRequestData] = useState([]);
+  useEffect(() => {
+    fetchRequestData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [user]);
+  console.log(manageData);
+
+  const fetchRequestData = async () => {
+    const { data } = await axios.get(
+      `${import.meta.env.VITE_API_URL}/beVolunteer/${user?.email}`
+    );
+    setRequestData(data);
+  };
+
   return (
     <div className="my-12">
       {/* first section  */}
@@ -54,7 +69,7 @@ const ManageMyPostPage = () => {
           </div>
           {manageData.length === 0 ? (
             <h1 className="text-center text-6xl font-bold text-purple-600 my-24">
-              Manage My Data is Empty
+              My Volunteer Need Post is Empty
             </h1>
           ) : (
             " "
@@ -92,7 +107,7 @@ const ManageMyPostPage = () => {
           </div>
           {manageData.length === 0 ? (
             <h1 className="text-center text-6xl font-bold text-purple-600 my-24">
-              Manage My Data is Empty
+              My Volunteer Request Post is Empty
             </h1>
           ) : (
             " "

@@ -38,46 +38,46 @@ const HomePage = () => {
           <div className="collapse collapse-arrow join-item border-base-300 border">
             <input type="radio" name="my-accordion-4" />
             <div className="collapse-title text-xl font-medium">
-              Click to open this one and close others
+            How much time do I need to volunteer?
             </div>
             <div className="collapse-content">
-              <p>hello</p>
+              <p>This is really up to you. You can find volunteering opportunities that only take one hour per month, to five days a week - or more. Some roles are for one-off events, some are short term and others might need a six month commitment. You can volunteer at any time of the week, day or night. While much volunteering takes place in office hours, you can volunteer at evenings and weekends too, again depending on what you want to do. Some organisations ask for a particular commitment from their volunteers while others are able to take a more flexible approach. Certain roles like befriending require building up trust with someone, which is why a certain amount of commitment is required. Think carefully about the amount of commitment you are able to give before choosing your role. Our opportunity search helps narrow down the opportunities that suit your life.</p>
             </div>
           </div>
           <div className="collapse collapse-arrow join-item border-base-300 border">
             <input type="radio" name="my-accordion-4" />
             <div className="collapse-title text-xl font-medium">
-              Click to open this one and close others
+            Can I leave if I don't like it?
             </div>
             <div className="collapse-content">
-              <p>hello</p>
+              <p>Yes, of course. You are under no obligation to keep volunteering for an organisation if you don’t like it. But it is always worth talking to somebody before stopping. That could be your volunteer co-ordinator (if there is one), supervisor or someone in the organisation who is responsible for you. You can discuss with them why you feel unhappy and what you feel would improve your time as a volunteer. It is also something you may want to talk about with other volunteers in the organisation. You could either do that informally or, if your organisation has a regular meeting for volunteers, you could bring up any issues there. If you feel that something is seriously wrong, or someone is treating you badly, it is also worth checking whether your organisation has a complaints procedure. Some organisations have ‘volunteer agreements’ that explain expectations on both sides. </p>
             </div>
           </div>
           <div className="collapse collapse-arrow join-item border-base-300 border">
             <input type="radio" name="my-accordion-4" />
             <div className="collapse-title text-xl font-medium">
-              Click to open this one and close others
+            Do I need qualifications?
             </div>
             <div className="collapse-content">
-              <p>hello</p>
+              <p>Not usually, no. Some volunteering opportunities require certain skills such as counselling which may require qualifications, but organisations often provide training. If particular qualifications are needed in order to take up the volunteering role, the information should be available on the organisations' website. Often organisations are looking for personal skills, such as being able to get on with a wide variety of people, being reliable and being enthusiastic about a particular interest or cause - rather than academic qualifications.</p>
             </div>
           </div>
           <div className="collapse collapse-arrow join-item border-base-300 border">
             <input type="radio" name="my-accordion-4" />
             <div className="collapse-title text-xl font-medium">
-              Click to open this one and close others
+            What about online volunteering?
             </div>
             <div className="collapse-content">
-              <p>hello</p>
+              <p>If you would like to give time but are unable to turn up in person or have little free time then online volunteering could be the answer. Giving time over the web is convenient and flexible and allows people to get involved who might otherwise be unable to. Online volunteering allows you to complete tasks from home, at work or anywhere! The tasks could be for organisations around the corner, overseas or they may exist only on the internet.</p>
             </div>
           </div>
           <div className="collapse collapse-arrow join-item border-base-300 border">
             <input type="radio" name="my-accordion-4" />
             <div className="collapse-title text-xl font-medium">
-              Click to open this one and close others
+            Can I volunteer from home?
             </div>
             <div className="collapse-content">
-              <p>hello</p>
+              <p>Yes. It's an increasingly popular way of volunteering and you can search for home based opportunities on our website. Example opportunities are telephone befriending or some people combine their hobby with volunteering such as knitters making blankets and baby clothes to be sold for charity. For specific information on online volunteering, see Q8 - What about online volunteering?</p>
             </div>
           </div>
         </div>
