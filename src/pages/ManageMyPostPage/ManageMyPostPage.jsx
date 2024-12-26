@@ -15,7 +15,7 @@ const ManageMyPostPage = () => {
     fetchManageData();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
-  console.log(manageData);
+  // console.log(manageData);
 
   const fetchManageData = async () => {
     const { data } = await axiosSecure.get(`/getManageData/${user?.email}`
