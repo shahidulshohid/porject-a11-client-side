@@ -4,6 +4,7 @@ import VolunteerNeedsSection from "../../components/VolunteerNeedsSection/Volunt
 import img1 from "../../assets/review1.jpg";
 import img2 from "../../assets/review2.jpg";
 import img4 from "../../assets/review4.jpg";
+import { Fade } from "react-awesome-reveal";
 
 const HomePage = () => {
   useEffect(() => {
@@ -15,7 +16,8 @@ const HomePage = () => {
       <VolunteerNeedsSection></VolunteerNeedsSection>
       {/* extra section one  */}
       <section>
-        <div className="bg-white w-full lg:w-4/12 mx-auto p-3 mb-6 rounded-xl">
+        <Fade direction="up">
+        <div className="bg-lime-100 w-full lg:w-4/12 mx-auto p-3 mb-6 rounded-xl">
           <h3 className="text-3xl text-gray-600 text-center font-bold mb-2">
             Volunteering FAQs{" "}
           </h3>
@@ -24,8 +26,9 @@ const HomePage = () => {
             frequently asked questions from volunteers here:
           </p>
         </div>
+        </Fade>
 
-        <div className="join join-vertical w-full bg-white">
+        <div className="join join-vertical w-full bg-lime-100">
           <div className="collapse collapse-arrow join-item border-base-300 border">
             <input type="radio" name="my-accordion-4" defaultChecked />
             <div className="collapse-title text-xl font-medium">
@@ -84,13 +87,16 @@ const HomePage = () => {
       </section>
       {/* extra section two  */}
       <section className="my-12 w-11/12 mx-auto">
-        <h3 className="text-3xl text-white text-center font-bold">Reviews</h3>
+        <Fade direction="right"><h3 className="text-3xl text-white text-center font-bold">Reviews</h3></Fade>
+        <Fade direction="left">
         <p className="text-center text-white mb-3">
           A reviews volunteer is someone who dedicates their time and effort to
           help gather, write, <br /> evaluate, or manage reviews for various
           purposes
         </p>
-        <div className="divider mb-6">OR</div>
+        </Fade>
+        <Fade direction="right"><div className="divider mb-6">OR</div></Fade>
+        <Fade direction="left">
         <div className="lg:flex justify-center gap-12">
           <div className="w-full mb-6 lg:mb-0 lg:w-4/12 bg-white p-4 rounded-xl">
             <p className="mb-4">
@@ -133,6 +139,8 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+        </Fade>
+        <Fade direction="down">
         <div className="w-full mb-6 lg:mb-0 lg:w-4/12 mx-auto bg-white p-4 rounded-xl mt-6">
           <p className="mb-4">
             Volunteer Management: An Overview Volunteer management refers to the
@@ -153,6 +161,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+        </Fade>
       </section>
     </div>
   );

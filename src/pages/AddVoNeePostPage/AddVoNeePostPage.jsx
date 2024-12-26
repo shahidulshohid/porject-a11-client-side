@@ -165,7 +165,7 @@ const AddVoNeePostPage = () => {
         ></textarea>
       </div>
       <div className="flex justify-end mt-6">
-        <button className="disabled:cursor-not-allowed px-8 py-2.5 leading-5 text-black text-xl transition-colors duration-300 transhtmlForm bg-amber-200 rounded-md hover:bg-amber-200 focus:outline-none focus:bg-amber-200 w-full">
+        <button className="disabled:cursor-not-allowed px-8 py-2.5 leading-5 text-black text-xl transition-colors duration-300 transhtmlForm bg-green-500 rounded-md hover:bg-green-500 focus:outline-none focus:bg-green-500 w-full">
         Add Post
         </button>
       </div>
