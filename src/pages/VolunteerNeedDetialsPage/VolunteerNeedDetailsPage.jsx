@@ -2,9 +2,11 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { format } from "date-fns";
+import useAxiosSecure from "../../hook/useAxiosSecure";
 
 const VolunteerNeedDetailsPage = () => {
   const { id } = useParams();
+  const axiosSecure = useAxiosSecure()
 
   const [volunteerNeedsDetails, setVolunteerNeedsDetails] = useState({});
 
@@ -14,8 +16,7 @@ const VolunteerNeedDetailsPage = () => {
   }, [id]);
 
   const fetchJobData = async () => {
-    const { data } = await axios.get(
-      `${import.meta.env.VITE_API_URL}/volunteerDetails/${id}`
+    const { data } = await axiosSecure.get(`/volunteerDetails/${id}`
     );
     setVolunteerNeedsDetails(data);
   };
