@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import useAuth from "../../hook/useAuth";
-import axios from "axios";
 import { toast } from "react-toastify";
+import useAxiosSecure from "../../hook/useAxiosSecure";
 
 const AddVoNeePostPage = () => {
   const { user } = useAuth();
+  const axiosSecure = useAxiosSecure()
   const [startDate, setStartDate] = useState(new Date());
   useEffect(()=> {
     document.title = 'Add volunteer need post page | Volunteer management'
@@ -37,7 +38,7 @@ const AddVoNeePostPage = () => {
   };
     // make a post request 
     try {
-      await axios.post(`${import.meta.env.VITE_API_URL}/add-volunteer-post`, formData)
+      await axiosSecure.post(`/add-volunteer-post`, formData)
       form.reset()
       toast.success('Data added successfully', {
         position:'top-center'
