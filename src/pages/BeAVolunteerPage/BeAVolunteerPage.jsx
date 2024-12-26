@@ -79,7 +79,7 @@ const BeAVolunteerPage = () => {
     }
   };
   return (
-    <div className="my-12 mx-4 lg:mx-0">
+    <div className="my-12 mx-4 lg:mx-0 bg-[#f857d0] p-3 lg:p-5 rounded-xl">
       <h3 className="text-center my-3 text-3xl text-white">
         Be a volunteer page{" "}
       </h3>

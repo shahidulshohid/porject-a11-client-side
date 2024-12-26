@@ -2,6 +2,7 @@
   - assignment_category_10
   - My project name is: Volunteer management website.
   - MY project live link: https://b10-assignment-11.firebaseapp.com/
+  - Purpose of this project is: Doing Volunteer management 
 
   - ** A brief description some key feature of my project:
   - I am explain here some key of my project like... I have added dark and light mode on the top.
