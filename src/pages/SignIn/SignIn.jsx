@@ -1,12 +1,13 @@
 import Lottie from "lottie-react";
 import signInLottieData from "../../assets/lottie/signIn.json";
 import useAuth from "../../hook/useAuth";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const SignIn = () => {
   const { signInUser, handleGoogleLogin } = useAuth();
   const navigate = useNavigate()
+  const location = useLocation()
   const handleSignIn = (e) => {
     e.preventDefault();
 
