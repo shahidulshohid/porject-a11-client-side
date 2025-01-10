@@ -4,7 +4,7 @@ const Blogs = ({item}) => {
   return (
     <div>
       <div>
-          <div>
+          <div className="w-full h-[280px]">
             <img className="w-full h-[280px]" src={image} alt="" />
           </div>
           <div>
