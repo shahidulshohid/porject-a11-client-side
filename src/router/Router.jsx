@@ -12,6 +12,7 @@ import PrivateRoute from "./PrivateRoute";
 import ManageMyPostPage from "../pages/ManageMyPostPage/ManageMyPostPage";
 import UpdateManageProfileData from "../pages/UpdateManageMyProfileData/UpdateManageProfileData";
 import AboutPage from "../pages/AboutPage/AboutPage";
+import BlogDetails from "../pages/BlogDetails/BlogDetails";
 
 const router = createBrowserRouter([
     {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
             {
                 path:'/',
                 element:<HomePage></HomePage>
+            },
+            {
+                path:'/blogs/:id',
+                element:<BlogDetails></BlogDetails>
             },
             {
                 path:'/about',

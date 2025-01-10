@@ -1,15 +1,23 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import BannerSection from "../../components/BannerSection/BannerSection";
 import VolunteerNeedsSection from "../../components/VolunteerNeedsSection/VolunteerNeedsSection";
 import img1 from "../../assets/review1.jpg";
 import img2 from "../../assets/review2.jpg";
 import img4 from "../../assets/review4.jpg";
 import { Fade } from "react-awesome-reveal";
+import Blogs from "../../components/Blogs/Blogs";
 
 const HomePage = () => {
+  const [blog, setBlog] = useState([])
   useEffect(() => {
     document.title = "Home page | Volunteer management";
   }, []);
+
+  useEffect(()=> {
+    fetch('/blog.json')
+    .then(res => res.json())
+    .then(data => setBlog(data))
+  }, [])
   return (
     <div>
       <BannerSection></BannerSection>
@@ -163,6 +171,15 @@ const HomePage = () => {
         </div>
         </Fade>
       </section>
+      {/* blogs section  */}
+      <div className="my-16">
+      <h3 className="text-3xl text-center text-white font-bold mb-6">Blogs</h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      {
+        blog?.map(item => <Blogs key={item.id} item={item}></Blogs>)
+      }
+      </div>
+      </div>
     </div>
   );
 };

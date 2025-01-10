@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import volunteerMission from "../../assets/volunteerMission.png";
 const AboutPage = () => {
+
+   useEffect(() => {
+      document.title = "About page | Volunteer management";
+    }, []);
+
   return (
     <div className="my-12">
-      <h2 class="text-3xl font-bold text-center text-white mb-1">About Us</h2>
-      <p class="text-center text-white text-lg mb-8">
+      <h2 className="text-3xl font-bold text-center text-white mb-1">About Us</h2>
+      <p className="text-center text-white text-lg mb-8">
         Building Communities, One Volunteer at a Time
       </p>
       <div className="flex justify-between gap-5">
