@@ -32,17 +32,19 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-        <details className="dropdown">
-          <summary className="text-lg bg-transparent">My Profile</summary>
-          <ul className="menu dropdown-content bg-base-100 rounded-lg z-[1] w-52 shadow">
-            <li>
-              <Link to="/addVoNeedPost">Add Volunteer need Post</Link>
-            </li>
-            <li>
-              <Link to='/manageMyPost'>Manage My Posts </Link>
-            </li>
-          </ul>
-        </details>
+        {user && (
+          <details className="dropdown">
+            <summary className="text-lg bg-transparent">My Profile</summary>
+            <ul className="menu dropdown-content bg-base-100 rounded-lg z-[1] w-52 shadow">
+              <li>
+                <Link to="/addVoNeedPost">Add Volunteer need Post</Link>
+              </li>
+              <li>
+                <Link to="/manageMyPost">Manage My Posts </Link>
+              </li>
+            </ul>
+          </details>
+        )}
       </li>
     </>
   );
@@ -101,7 +103,10 @@ const Navbar = () => {
           )}
         </button>
         {!user && (
-          <Link className="ml-5 text-xl btn bg-[#571214] text-white" to="/signIn">
+          <Link
+            className="ml-5 text-xl btn bg-[#571214] text-white"
+            to="/signIn"
+          >
             <button>Login</button>
           </Link>
         )}

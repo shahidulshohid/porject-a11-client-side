@@ -4,6 +4,7 @@ import { CiViewTable } from "react-icons/ci";
 import { TfiLayoutGrid3 } from "react-icons/tfi";
 import ShowAllVolunteerPostPage from "../../components/ShowAllVolunteerPostPage/ShowAllVolunteerPostPage";
 import AllVolunteerTableLayout from "../AllVolunteerTableLayout/AllVolunteerTableLayout";
+import { hi } from "date-fns/locale";
 
 const AllVoNeePostPage = () => {
   const [volunteerNeedsData, setVolunteerNeedsData] = useState([]);
@@ -44,12 +45,12 @@ const AllVoNeePostPage = () => {
             aria-label="Post Title"
           />
 
-          <button className="px-1 md:px-4 py-3 text-sm font-medium tracking-wider text-gray-100 uppercase transition-colors duration-300 transform bg-gray-700 rounded-r-md hover:bg-gray-600 focus:bg-gray-600 focus:outline-none">
+          <button className="px-1 md:px-4 py-3 text-sm font-medium tracking-wider text-white uppercase transition-colors duration-300 transform bg-green-500 rounded-r-md hover:bg-green-500 focus:bg-green-600 focus:outline-none">
             Search
           </button>
           <button
             onClick={resetFn}
-            className="px-1 md:px-4 py-3 text-sm font-medium tracking-wider text-gray-100 uppercase transition-colors duration-300 transform bg-gray-700 rounded-md ml-3 hover:bg-gray-600 focus:bg-gray-600 focus:outline-none"
+            className="px-1 md:px-4 py-3 text-sm font-medium tracking-wider text-white uppercase transition-colors duration-300 transform bg-green-500 rounded-md ml-3 hover:bg-green-500 focus:bg-green-600 focus:outline-none"
           >
             Reset
           </button>
@@ -95,6 +96,11 @@ const AllVoNeePostPage = () => {
           </div>
         </div>
       )}
+      {
+        volunteerNeedsData.length === 0 && (
+          <h1 className="text-center text-5xl font-bold h-screen text-white mt-12">DATA NOT FOUND</h1>
+        )
+      }
     </div>
   );
 };
