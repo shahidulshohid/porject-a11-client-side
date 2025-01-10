@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 const Blogs = ({item}) => {
   const {id, image, title, description} = item
+  
   return (
     <div>
       <div>

@@ -69,7 +69,7 @@ const ManageMyPostPage = () => {
             </table>
           </div>
           {manageData.length === 0 ? (
-            <h1 className="text-center text-6xl font-bold text-purple-600 my-24">
+            <h1 className="text-center text-3xl md:text-6xl font-bold text-purple-600 my-24">
               My Volunteer Need Post is Empty
             </h1>
           ) : (
@@ -107,7 +107,7 @@ const ManageMyPostPage = () => {
             </table>
           </div>
           {requestData.length === 0 ? (
-            <h1 className="text-center text-6xl font-bold text-purple-600 my-24">
+            <h1 className="text-center text-3xl md:text-6xl font-bold text-purple-600 my-24">
               My Volunteer Request post is Empty
             </h1>
           ) : (
