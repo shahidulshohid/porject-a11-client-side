@@ -27,6 +27,11 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
+        <Link className="text-lg" to="/about">
+          About Us
+        </Link>
+      </li>
+      <li>
         <Link className="text-lg" to="/allVoNeePost">
           All volunteer Need posts
         </Link>
@@ -75,14 +80,19 @@ const Navbar = () => {
             {menu}
           </ul>
         </div>
+        <div className="flex gap-3">
         <img
           className="w-8 h-8 md:w-12 md:h-12 rounded-full"
           src={volunteerLogo}
           alt="logo"
         />
-        <h1 className="hidden md:flex text:xl lg:text-2xl font-bold ml-2">
-          Volunteer Management
+        <div>
+        <h1 className="hidden md:flex text:xl lg:text-2xl font-bold">
+          Volunteer
         </h1>
+        <span className="hidden md:flex ">Management</span>
+        </div>
+        </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{menu}</ul>

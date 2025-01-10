@@ -1,0 +1,48 @@
+import React from "react";
+import volunteerMission from "../../assets/volunteerMission.png";
+const AboutPage = () => {
+  return (
+    <div className="my-12">
+      <h2 class="text-3xl font-bold text-center text-white mb-1">About Us</h2>
+      <p class="text-center text-white text-lg mb-8">
+        Building Communities, One Volunteer at a Time
+      </p>
+      <div className="flex justify-between gap-5">
+        <div className="w-1/2 space-y-3">
+          <div>
+            <h3 className=" text-gray-700 font-bold text-xl"> Empowering Communities</h3>
+            <p className="text-white">
+              Our mission is to create opportunities for individuals to
+              contribute to their communities meaningfully. Through
+              volunteering, we aim to empower people, strengthen bonds, and
+              build a more compassionate and united world.
+            </p>
+          </div>
+          <div>
+            <h3 className=" text-gray-700 font-bold text-xl">Driving Change Through Action</h3>
+            <p className="text-white">
+            Our mission is to drive meaningful change by connecting volunteers with impactful causes. We believe every small act of kindness contributes to a larger movement for social good
+            </p>
+          </div>
+          <div>
+            <h3 className=" text-gray-700 font-bold text-xl">Building a Better World Together</h3>
+            <p className="text-white">
+            We are dedicated to building a better world by harnessing the power of volunteerism. Our mission is to unite individuals from all walks of life to create sustainable solutions and enrich the lives of those we serve
+            </p>
+          </div>
+          <div>
+            <h3 className=" text-gray-700 font-bold text-xl">Inspiring Hope and Action</h3>
+            <p className="text-white">
+            Our mission is to inspire hope and encourage action. We believe that together, through volunteering, we can overcome challenges, uplift communities, and create a more equitable world.
+            </p>
+          </div>
+        </div>
+        <div className="w-1/2">
+          <img src={volunteerMission} alt="" />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default AboutPage;
