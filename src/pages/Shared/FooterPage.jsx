@@ -38,8 +38,8 @@ const FooterPage = () => {
         </nav>
         <nav>
           <h6 className="text-xl  text-black">Contact us</h6>
-          <p className="flex items-center gap-3 text-gray-500"><FaSquarePhoneFlip size={20}/> <small className="text-xl font-bold text-gray-500">01738283277</small></p>
-          <p className="flex items-center gap-3 text-gray-500"><MdEmail size={20}/> <small className="text-xl font-bold text-gray-500">shahidulislamshohid7@gmail.com</small></p>
+          <p className="flex items-center gap-3 text-gray-500"><FaSquarePhoneFlip size={20}/> <small className="text-lg font-bold text-gray-500">01738283277</small></p>
+          <p className="flex items-center gap-3 text-gray-500"><MdEmail size={20}/> <small className="text-lg font-bold text-gray-500">shahidulislamshohid7@gmail.com</small></p>
         </nav>
       </footer>
     </div>
