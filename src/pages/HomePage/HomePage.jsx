@@ -6,6 +6,7 @@ import img2 from "../../assets/review2.jpg";
 import img4 from "../../assets/review4.jpg";
 import { Fade } from "react-awesome-reveal";
 import Blogs from "../../components/Blogs/Blogs";
+import ContactSection from "../../components/ContactSection/ContactSection";
 
 const HomePage = () => {
   const [blog, setBlog] = useState([])
@@ -23,7 +24,7 @@ const HomePage = () => {
       <BannerSection></BannerSection>
       <VolunteerNeedsSection></VolunteerNeedsSection>
       {/* extra section one  */}
-      <section>
+      <section id="faq">
         <Fade direction="up">
         <div className="bg-lime-100 w-full lg:w-4/12 mx-auto p-3 mb-6 rounded-xl">
           <h3 className="text-3xl text-gray-600 text-center font-bold mb-2">
@@ -179,6 +180,9 @@ const HomePage = () => {
         blog?.map(item => <Blogs key={item.id} item={item}></Blogs>)
       }
       </div>
+      </div>
+      <div className="my12">
+      <ContactSection></ContactSection>
       </div>
     </div>
   );
