@@ -32,9 +32,8 @@ const FooterPage = () => {
         <nav>
           <h6 className="text-xl text-black">Stay Up to Date</h6>
           <a href="/#contact" className="link link-hover text-black">Contact Us</a>
-          <a className="link link-hover text-black">Organization</a>
-          <a className="link link-hover text-black">Public Relations</a>
-          <a className="link link-hover text-black">Dept History</a>
+          <a href="/#blogs" className="link link-hover text-black">Blogs</a>
+          <a href="/#reviews" className="link link-hover text-black">Reviews</a>
           <a href="/#faq" className="link link-hover text-black">FAQ's</a>
         </nav>
         <nav>

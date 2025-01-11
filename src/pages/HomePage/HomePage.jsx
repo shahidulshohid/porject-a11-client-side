@@ -95,7 +95,7 @@ const HomePage = () => {
         </div>
       </section>
       {/* extra section two  */}
-      <section className="my-12 w-11/12 mx-auto">
+      <section className="my-12 w-11/12 mx-auto" id="reviews">
         <Fade direction="right"><h3 className="text-3xl text-white text-center font-bold">Reviews</h3></Fade>
         <Fade direction="left">
         <p className="text-center text-white mb-3">

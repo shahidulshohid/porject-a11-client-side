@@ -3,7 +3,7 @@ const Blogs = ({item}) => {
   const {id, image, title, description} = item
   
   return (
-    <div>
+    <div id="blogs">
       <div>
           <div className="w-full h-[280px]">
             <img className="w-full h-[280px]" src={image} alt="" />
