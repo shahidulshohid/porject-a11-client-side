@@ -7,9 +7,7 @@ const MainLayout = () => {
         <div className="bg-blue-500 dark:bg-blue-600">
         <div>
             <Navbar></Navbar>
-            {/* <div className="max-w-7xl mx-auto"> */}
             <Outlet></Outlet>
-            {/* </div> */}
             <FooterPage></FooterPage>
         </div>
         </div>

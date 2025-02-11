@@ -7,13 +7,13 @@ const AboutPage = () => {
     }, []);
 
   return (
-    <div className="my-12">
+    <div className="mt-12 max-w-7xl mx-auto">
       <h2 className="text-3xl font-bold text-center text-white mb-1">About Us</h2>
       <p className="text-center text-white text-lg mb-8">
         Building Communities, One Volunteer at a Time
       </p>
-      <div className="flex justify-between gap-5">
-        <div className="w-1/2 space-y-3">
+      <div className="lg:flex justify-between gap-5">
+        <div className="w-full lg:w-1/2 space-y-3 text-center px-4 mb-6 lg:mb-0">
           <div>
             <h3 className=" text-gray-700 font-bold text-xl"> Empowering Communities</h3>
             <p className="text-white">
@@ -42,7 +42,7 @@ const AboutPage = () => {
             </p>
           </div>
         </div>
-        <div className="w-1/2">
+        <div className="w-full lg:w-1/2">
           <img src={volunteerMission} alt="" />
         </div>
       </div>
