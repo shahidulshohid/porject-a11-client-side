@@ -28,7 +28,7 @@ const AllVoNeePostPage = () => {
     setSearch("");
   };
   return (
-    <div className="my-12">
+    <div className="my-12 max-w-7xl mx-auto">
       <div className="flex justify-center lg:justify-between items-center">
         <h3 className="hidden md:flex text-3xl text-white font-bold">
           All Volunteer Needs Post
@@ -60,7 +60,7 @@ const AllVoNeePostPage = () => {
           <button onClick={()=> changeLayout(true)} className="btn"><TfiLayoutGrid3 size={17}/></button>
         </div>
       {layout ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-3 gap-5">
           {volunteerNeedsData?.map((data) => (
             <ShowAllVolunteerPostPage
               key={data._id}
