@@ -17,7 +17,8 @@ const BlogDetails = () => {
       });
   }, []);
   return (
-    <div className="my-12">
+    <div className="my-12 max-w-7xl mx-auto">
+      <h3 className="text-3xl text-center text-white font-bold mb-3">Blog Details</h3>
       <div className="flex gap-5 bg-white">
         <div className="w-full h-[280px] flex-1">
           <img
@@ -33,10 +34,10 @@ const BlogDetails = () => {
           <p className="text-gray-500">{details.description}</p>
         </div>
       </div>
-      <div className="mt-3">
+      <div className="mt-5">
       {details.sections && details.sections.length > 0 ? (
           details.sections.map((section, index) => (
-            <div key={index} className="mb-6">
+            <div key={index} className="mb-2">
               <h3 className="text-lg font-bold">{section.heading}</h3>
               <p className="text-gray-100">{section.content}</p>
             </div>
