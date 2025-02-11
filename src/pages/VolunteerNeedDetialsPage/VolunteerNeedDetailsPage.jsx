@@ -22,13 +22,13 @@ const VolunteerNeedDetailsPage = () => {
   };
 
   return (
-    <div className="py-12">
+    <div className="pt-12">
       <div className="bg-white rounded-xl p-4 lg:w-1/2 mx-auto">
         <div className="w-full">
           <img className="rounded-t-xl mb-4 w-full" src={volunteerNeedsDetails.thumbnail} alt="" />
         </div>
         <div className="space-y-1">
-          <h3 className="text-xl font-semibold">Title: {volunteerNeedsDetails.title}</h3>
+          <h3 className="text-xl font-semibold">{volunteerNeedsDetails.title}</h3>
           <h4 className="text-lg">Category: {volunteerNeedsDetails.category}</h4>
           {
             volunteerNeedsDetails?.deadline && <p className="text-lg">Deadline: {format(new Date(volunteerNeedsDetails.deadline), "P")}</p>
@@ -40,7 +40,7 @@ const VolunteerNeedDetailsPage = () => {
           <p>Location: {volunteerNeedsDetails.location}</p>
           <div>
           <Link to={`/beAVolunteer/${id}`}>
-            <button className="text-lg bg-green-500 py-2 px-4 rounded-lg mt-2 text-black">
+            <button className="text-lg bg-green-500 py-2 px-4 rounded-lg mt-2 text-white font-semibold">
             Be a Volunteer
             </button>
           </Link>
