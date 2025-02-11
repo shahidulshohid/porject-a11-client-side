@@ -25,19 +25,17 @@ const HomePage = () => {
       <VolunteerNeedsSection></VolunteerNeedsSection>
       {/* extra section one  */}
       <section id="faq">
-        <Fade direction="up">
-          <div className="bg-lime-100 w-full lg:w-4/12 mx-auto p-3 mb-6 rounded-xl">
-            <h3 className="text-3xl text-gray-600 text-center font-bold mb-2">
+          <div className="w-full md:w-6/12 lg:w-5/12 mx-auto p-3 mb-6 rounded-xl">
+            <h3 className="text-3xl text-white text-center font-bold mb-1">
               Volunteering FAQs{" "}
             </h3>
-            <p className="text-center text-gray-500">
+            <p className="text-center text-white -mb-3">
               Got a question about volunteering? We’ve answered some of the
               frequently asked questions from volunteers here:
             </p>
           </div>
-        </Fade>
 
-        <div className="join join-vertical w-full bg-lime-100">
+        <div className="join join-vertical w-full bg-white">
           <div className="collapse collapse-arrow join-item border-base-300 border">
             <input type="radio" name="my-accordion-4" defaultChecked />
             <div className="collapse-title text-xl font-medium">
