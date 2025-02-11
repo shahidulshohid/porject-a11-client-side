@@ -28,7 +28,7 @@ const BannerSection = () => {
       >
         <SwiperSlide>
           <div
-            className="flex justify-center items-center rounded-xl"
+            className="flex justify-center items-center"
             style={{
               backgroundImage: `url(${bannerImg1})`,
               height: "400px",
@@ -64,7 +64,7 @@ const BannerSection = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div
-            className="flex justify-center items-center rounded-xl"
+            className="flex justify-center items-center"
             style={{
               backgroundImage: `url(${bannerImg3})`,
               height: "400px",
@@ -82,7 +82,7 @@ const BannerSection = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div
-            className="flex justify-center items-center rounded-xl"
+            className="flex justify-center items-center"
             style={{
               backgroundImage: `url(${bannerImg4})`,
               height: "400px",
@@ -100,7 +100,7 @@ const BannerSection = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div
-            className="flex justify-center items-center rounded-xl"
+            className="flex justify-center items-center"
             style={{
               backgroundImage: `url(${bannerImg5})`,
               height: "400px",
