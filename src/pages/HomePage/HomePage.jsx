@@ -5,6 +5,7 @@ import img1 from "../../assets/review1.jpg";
 import img2 from "../../assets/review2.jpg";
 import img4 from "../../assets/review4.jpg";
 import { Fade } from "react-awesome-reveal";
+import 'animate.css';
 import Blogs from "../../components/Blogs/Blogs";
 import ContactSection from "../../components/ContactSection/ContactSection";
 
@@ -160,21 +161,16 @@ const HomePage = () => {
         </div>
       </section>
       {/* extra section two  */}
-      <section className="my-12 w-11/12 mx-auto" id="reviews">
-        <Fade direction="right">
+      <section className="my-12 w-11/12 mx-auto" id="reviews mt-2">
           <h3 className="text-3xl text-white text-center font-bold">Reviews</h3>
-        </Fade>
-        <Fade direction="left">
-          <p className="text-center text-white mb-3">
+          <div className="w-full md:w-6/12 lg:w-5/12 mx-auto">
+          <p className="text-center text-white mb-4">
             A reviews volunteer is someone who dedicates their time and effort
-            to help gather, write, <br /> evaluate, or manage reviews for
+            to help gather, write, evaluate, or manage reviews for
             various purposes
           </p>
-        </Fade>
-        <Fade direction="right">
-          <div className="divider mb-6">OR</div>
-        </Fade>
-        <Fade direction="left">
+          </div>
+        <Fade direction="up">
           <div className="lg:flex justify-center gap-12">
             <div className="w-full mb-6 lg:mb-0 lg:w-4/12 bg-white p-4 rounded-xl">
               <p className="mb-4">
