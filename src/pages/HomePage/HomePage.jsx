@@ -244,7 +244,7 @@ const HomePage = () => {
         {/* blogs section  */}
         <div className="my-16">
           <h3 className="text-3xl text-center text-white font-bold">Blogs</h3>
-          <p className="mb-6 mt-1 text-white md:w-8/12 lg:w-5/12 mx-auto text-center">
+          <p className="mb-6 mt-1 text-white md:w-8/12 lg:w-5/12 mx-auto text-center p-4">
             Volunteer management builds a sustainable workforce through
             structured processes and engagement. Leveraging technology enhances
             impact while creating meaningful volunteer experiences.

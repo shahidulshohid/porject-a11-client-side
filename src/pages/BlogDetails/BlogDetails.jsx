@@ -17,7 +17,7 @@ const BlogDetails = () => {
       });
   }, []);
   return (
-    <div className="my-12 max-w-7xl mx-auto">
+    <div className="mt-12 max-w-7xl mx-auto">
       <h3 className="text-3xl text-center text-white font-bold mb-3">Blog Details</h3>
       <div className="flex gap-5 bg-white">
         <div className="w-full h-[280px] flex-1">
