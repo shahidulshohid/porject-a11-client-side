@@ -56,15 +56,15 @@ const router = createBrowserRouter([
                 path:'/updateManagePost/:id',
                 element:<UpdateManageProfileData></UpdateManageProfileData>
             },
-            {
-                path:'/register',
-                element:<Register></Register>
-            },
-            {
-                path:'/signIn',
-                element:<SignIn></SignIn>
-            }
         ]
+    },
+    {
+        path:'/register',
+        element:<Register></Register>
+    },
+    {
+        path:'/signIn',
+        element:<SignIn></SignIn>
     }
 ])
 

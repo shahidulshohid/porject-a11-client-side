@@ -1,7 +1,5 @@
 import React from "react";
 import Swal from "sweetalert2";
-import { IoMdMailOpen } from "react-icons/io";
-import { PiPhoneCallFill } from "react-icons/pi";
 import contactImg from "../../assets/contactImage.png";
 function ContactSection() {
   const onSubmit = async (event) => {

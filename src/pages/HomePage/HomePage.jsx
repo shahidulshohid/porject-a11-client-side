@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import BannerSection from "../../components/BannerSection/BannerSection";
 import VolunteerNeedsSection from "../../components/VolunteerNeedsSection/VolunteerNeedsSection";
 import img1 from "../../assets/review1.jpg";
 import img2 from "../../assets/review2.jpg";
@@ -22,7 +21,6 @@ const HomePage = () => {
   }, []);
   return (
     <div>
-      <BannerSection></BannerSection>
       <VolunteerNeedsSection></VolunteerNeedsSection>
       {/* extra section one  */}
       <section id="faq">

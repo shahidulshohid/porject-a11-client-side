@@ -3,6 +3,7 @@ import signInLottieData from "../../assets/lottie/signIn.json";
 import useAuth from "../../hook/useAuth";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { FaArrowLeftLong } from "react-icons/fa6";
 
 const SignIn = () => {
   const { signInUser, handleGoogleLogin } = useAuth();
@@ -43,7 +44,12 @@ const SignIn = () => {
     }
   };
   return (
-    <div className="hero min-h-screen">
+    <div className=" bg-blue-500">
+      <Link to="/" className="px-5">
+        <button className="flex items-center gap-2 px-3 py-2 bg-white text-black rounded-lg font-semibold"><FaArrowLeftLong className="mt-1"/> Back to home</button>
+      </Link>
+
+      <div className="hero min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse gap-6 md:gap-10 lg:gap-24">
         <div className="w-96">
           <Lottie animationData={signInLottieData}></Lottie>
@@ -100,6 +106,8 @@ const SignIn = () => {
         </div>
       </div>
     </div>
+    </div>
+    
   );
 };
 

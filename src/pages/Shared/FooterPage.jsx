@@ -11,9 +11,9 @@ import { Link } from "react-router-dom";
 
 const FooterPage = () => {
   return (
-    <div className="py-12">
+    <div className="py-16">
       <div className="bg-green-300 p-10">
-        <footer className="footer text-neutral-content">
+        <footer className="footer text-neutral-content max-w-7xl mx-auto">
           <nav>
             <div className="flex items-center gap-2">
               <img
