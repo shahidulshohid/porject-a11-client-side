@@ -44,18 +44,18 @@ const AllVoNeePostPage = () => {
             aria-label="Post Title"
           />
 
-          <button className="px-1 md:px-4 py-3 text-sm font-medium tracking-wider text-white uppercase transition-colors duration-300 transform bg-green-500 rounded-r-md hover:bg-green-500 focus:bg-green-600 focus:outline-none">
+          <button className="px-1 md:px-4 py-3 text-sm font-medium tracking-wider text-white uppercase transition-colors duration-300 transform bg-green-500 rounded-r-md hover:bg-green-600 focus:bg-green-600 focus:outline-none">
             Search
           </button>
           <button
             onClick={resetFn}
-            className="px-1 md:px-4 py-3 text-sm font-medium tracking-wider text-white uppercase transition-colors duration-300 transform bg-green-500 rounded-md ml-3 hover:bg-green-500 focus:bg-green-600 focus:outline-none"
+            className="px-1 md:px-4 py-3 text-sm font-medium tracking-wider text-white uppercase transition-colors duration-300 transform bg-green-500 rounded-md ml-3 hover:bg-green-600 focus:bg-green-600 focus:outline-none"
           >
             Reset
           </button>
         </div>
       </div>
-      <div className="flex items-center justify-center gap-5 mt-3">
+      <div className="flex items-center justify-center gap-5 mt-3 mb-5">
           <button onClick={()=> changeLayout(false)} className="btn"><CiViewTable size={25} /></button>
           <button onClick={()=> changeLayout(true)} className="btn"><TfiLayoutGrid3 size={17}/></button>
         </div>

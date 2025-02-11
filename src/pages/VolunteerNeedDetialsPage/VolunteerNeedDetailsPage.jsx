@@ -40,7 +40,7 @@ const VolunteerNeedDetailsPage = () => {
           <p>Location: {volunteerNeedsDetails.location}</p>
           <div>
           <Link to={`/beAVolunteer/${id}`}>
-            <button className="text-lg bg-green-500 py-2 px-4 rounded-lg mt-2 text-white font-semibold">
+            <button className="text-lg bg-green-500 hover:bg-green-600 py-2 px-4 rounded-lg mt-2 text-white font-semibold">
             Be a Volunteer
             </button>
           </Link>
