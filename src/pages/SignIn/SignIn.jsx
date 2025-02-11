@@ -52,7 +52,7 @@ const SignIn = () => {
       </Link>
       <div className="hero">
       <div className="hero-content flex-col lg:flex-row-reverse gap-6 md:gap-10 lg:gap-24">
-        <div className="w-96">
+        <div className="md:w-96">
           <Lottie animationData={signInLottieData}></Lottie>
         </div>
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
