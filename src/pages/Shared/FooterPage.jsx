@@ -8,6 +8,7 @@ import volunteerLogo from "../../assets/volunteerLogo.jpg";
 import { FaSquarePhoneFlip } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { Link } from "react-router-dom";
+import { FaArrowLeftLong } from "react-icons/fa6";
 
 const FooterPage = () => {
   return (
@@ -68,7 +69,7 @@ const FooterPage = () => {
             <h6 className="text-xl  text-black font-bold">Contact us</h6>
             <p className="flex items-center gap-3 text-black">
               <FaSquarePhoneFlip size={20} />{" "}
-              <small className="text-lg text-black">01738283277</small>
+              <small className="text-lg text-black">+8801738283277</small>
             </p>
             <p className="flex items-center gap-3 text-black">
               <MdEmail size={20} />{" "}
@@ -78,7 +79,7 @@ const FooterPage = () => {
             </p>
           </nav>
         </footer>
-        <p className="text-center">
+        <p className="text-center mt-3">
           © 2025 VolunteerMatters. All Rights Reserved.
         </p>
       </div>
