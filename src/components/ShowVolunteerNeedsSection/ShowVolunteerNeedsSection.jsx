@@ -5,7 +5,7 @@ const ShowVolunteerNeedsSection = ({ data }) => {
   const {_id, thumbnail, title, category, deadline } = data;
   
   return (
-    <div className="bg-white rounded-xl p-4 relative">
+    <div className="bg-white rounded-xl p-4 relative hover:scale-105 transition-transform">
       <div className="w-full">
         <img className="rounded-t-xl mb-4 w-full h-[200px] object-cover" src={thumbnail} alt="" />
       </div>
@@ -15,12 +15,12 @@ const ShowVolunteerNeedsSection = ({ data }) => {
         <p className="text-lg pb-14">{format(new Date(deadline), "P")}</p>
         <div className="flex justify-between items-center gap-5 absolute bottom-4">
           <Link to={`/volunteerNeedDetails/${_id}`}>
-            <button className="text-lg bg-green-500 py-2 px-4 rounded-lg mt-2 text-white">
+            <button className="text-lg bg-green-500 py-1 px-3 rounded-lg hover:bg-green-600 mt-2 text-white">
               View Details
             </button>
           </Link>
           <Link to='/allVoNeePost'>
-            <button className="text-lg bg-green-500 py-2 px-4 rounded-lg mt-2 text-white">
+            <button className="text-lg bg-green-500 py-1 px-3 rounded-lg hover:bg-green-600 mt-2 text-white">
               See all
             </button>
           </Link>
