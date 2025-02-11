@@ -2,6 +2,7 @@ import React from "react";
 import Swal from "sweetalert2";
 import { IoMdMailOpen } from "react-icons/io";
 import { PiPhoneCallFill } from "react-icons/pi";
+import contactImg from "../../assets/contactImage.png";
 function ContactSection() {
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -33,14 +34,100 @@ function ContactSection() {
   };
 
   return (
-    <div className="my-12 bg-gray-100 px-6 py-12 rounded-xl" id="contact">
-      <h3 className="text-3xl  text-black font-bold text-center">
-        GET IN TOUCH
+    // <div className="my-12 bg-gray-100 px-6 py-12 rounded-xl" id="contact">
+    //   <h3 className="text-3xl  text-black font-bold text-center">
+    //     GET IN TOUCH
+    //   </h3>
+    //   <div className="md:flex justify-between space-y-5 md:space-y-0 md:gap-5 lg:gap-12">
+    //     <div className="flex-1">
+    //       <h3 className="text-4xl font-bold mb-2">
+    //         Dont't hesitate to contact us
+    //       </h3>
+    //       <p className="font-semibold text-lg mb-2">
+    //         Feel free to get in touch with me. I am always open to discussing
+    //         new projects, creative ideas or opportunities to be part of your
+    //         visions.
+    //       </p>
+    //       <div className="flex gap-3 items-center">
+    //         <div>
+    //           <IoMdMailOpen className="size-12" />
+    //         </div>
+    //         <div>
+    //           <h4 className="text-xl font-semibold">Mail me</h4>
+    //           <p className="text-sm font-semibold">
+    //             shahidulislamshohi7@gmail.com
+    //           </p>
+    //         </div>
+    //       </div>
+    //       <div className="flex gap-3 items-center mt-3">
+    //         <div>
+    //           <PiPhoneCallFill className="size-12" />
+    //         </div>
+    //         <div>
+    //           <h4 className="text-xl font-semibold">Mail me</h4>
+    //           <p className="text-sm font-semibold">+01738283277</p>
+    //         </div>
+    //       </div>
+    //     </div>
+    //     <div className="flex-1">
+    //       <form onSubmit={onSubmit}>
+    //         <div className="form-control">
+    //           <label className="label">
+    //             <span className="label-text">Name</span>
+    //           </label>
+    //           <input
+    //             type="text"
+    //             name="name"
+    //             placeholder="Name"
+    //             className="input input-bordered"
+    //             required
+    //           />
+    //         </div>
+    //         <div className="form-control">
+    //           <label className="label">
+    //             <span className="label-text">Email</span>
+    //           </label>
+    //           <input
+    //             type="email"
+    //             name="email"
+    //             placeholder="email"
+    //             className="input input-bordered"
+    //             required
+    //           />
+    //         </div>
+    //         <div className="form-control">
+    //           <label className="label">
+    //             <span className="label-text">Message</span>
+    //           </label>
+    //           <textarea
+    //             name="message"
+    //             className="textarea textarea-bordered"
+    //             id=""
+    //           ></textarea>
+    //         </div>
+    //         <button
+    //           className="btn bg-green-500 border-green-500 text-lg text-white mt-3 hover:text-black"
+    //           type="submit"
+    //         >
+    //           Submit
+    //         </button>
+    //       </form>
+    //     </div>
+    //   </div>
+    // </div>
+    <div className="" id="contact">
+      <h3 className="text-3xl  text-white font-bold text-center">
+        Contact with us
       </h3>
-      <div className="md:flex justify-between space-y-5 md:space-y-0 md:gap-5 lg:gap-12">
-        <div className="flex-1">
-          <h3 className="text-4xl font-bold mb-2">
-            Dont't hesitate to contact us
+      <p className="text-white md:w-5/12 mx-auto text-center mb-6 px-2">
+      Don't hesitate to contact us. Feel free to get in touch with me. I am always open to discussing new
+        projects, creative ideas or opportunities to be part of your visions.
+      </p>
+      <div className="bg-white my-12px-6 py-12 rounded-xl">
+        <div className="md:flex items-center">
+          <div className="flex-1">
+            {/* <h3 className="text-4xl font-bold mb-2">
+            Don't hesitate to contact us
           </h3>
           <p className="font-semibold text-lg mb-2">
             Feel free to get in touch with me. I am always open to discussing
@@ -66,51 +153,53 @@ function ContactSection() {
               <h4 className="text-xl font-semibold">Mail me</h4>
               <p className="text-sm font-semibold">+01738283277</p>
             </div>
+          </div> */}
+            <img className="h-[350px] w-full object-cover" src={contactImg} alt="" />
           </div>
-        </div>
-        <div className="flex-1">
-          <form onSubmit={onSubmit}>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Name</span>
-              </label>
-              <input
-                type="text"
-                name="name"
-                placeholder="Name"
-                className="input input-bordered"
-                required
-              />
-            </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Email</span>
-              </label>
-              <input
-                type="email"
-                name="email"
-                placeholder="email"
-                className="input input-bordered"
-                required
-              />
-            </div>
-            <div className="form-control">
-              <label className="label">
-                <span className="label-text">Message</span>
-              </label>
-              <textarea
-                name="message"
-                className="textarea textarea-bordered"
-                id=""
-              ></textarea>
-            </div>
-            <button
-              className="btn bg-green-500 border-green-500 text-lg text-white mt-3 hover:text-black"
-              type="submit"
-            >
-              Submit
-            </button>
-          </form>
+          <div className="flex-1 p-4">
+            <form onSubmit={onSubmit}>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Name</span>
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  className="input input-bordered"
+                  required
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Email</span>
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="email"
+                  className="input input-bordered"
+                  required
+                />
+              </div>
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Message</span>
+                </label>
+                <textarea
+                  name="message"
+                  className="textarea textarea-bordered"
+                  id=""
+                ></textarea>
+              </div>
+              <button
+                className="btn bg-green-500 border-green-500 text-lg text-white mt-3 hover:text-black"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </div>

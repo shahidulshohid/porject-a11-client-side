@@ -164,7 +164,7 @@ const HomePage = () => {
       <section className="my-12 w-11/12 mx-auto" id="reviews mt-2">
         <h3 className="text-3xl text-white text-center font-bold">Reviews</h3>
         <div className="w-full md:w-6/12 lg:w-5/12 mx-auto">
-          <p className="text-center text-white mb-4">
+          <p className="text-center text-white mb-6">
             A reviews volunteer is someone who dedicates their time and effort
             to help gather, write, evaluate, or manage reviews for various
             purposes
