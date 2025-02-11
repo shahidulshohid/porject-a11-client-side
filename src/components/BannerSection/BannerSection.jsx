@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 const BannerSection = () => {
   return (
-    <div className="mt-12">
+    <div className="">
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -46,7 +46,7 @@ const BannerSection = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div
-            className="flex justify-center items-center rounded-xl"
+            className="flex justify-center items-center"
             style={{
               backgroundImage: `url(${bannerImg2})`,
               height: "400px",

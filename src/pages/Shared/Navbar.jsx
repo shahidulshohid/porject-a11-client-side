@@ -80,7 +80,7 @@ const Navbar = () => {
             {menu}
           </ul>
         </div>
-        <div className="flex gap-3">
+        <Link to='/' className="flex gap-3">
         <img
           className="w-8 h-8 md:w-12 md:h-12 rounded-full"
           src={volunteerLogo}
@@ -92,7 +92,7 @@ const Navbar = () => {
         </h1>
         <span className="hidden md:flex ">Management</span>
         </div>
-        </div>
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{menu}</ul>
@@ -124,7 +124,7 @@ const Navbar = () => {
           <div className="ml-5 dropdown dropdown-hover">
             <div tabIndex={0} className="m-1">
               <img
-                className="w-12 h-12 rounded-full"
+                className="w-8 h-8 md:w-12 md:h-12 rounded-full"
                 src={user?.photoURL}
                 alt=""
               />

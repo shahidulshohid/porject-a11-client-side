@@ -7,7 +7,6 @@ import img4 from "../../assets/review4.jpg";
 import { Fade } from "react-awesome-reveal";
 import Blogs from "../../components/Blogs/Blogs";
 import ContactSection from "../../components/ContactSection/ContactSection";
-import { Helmet } from "react-helmet-async";
 
 const HomePage = () => {
   const [blog, setBlog] = useState([]);
@@ -22,9 +21,6 @@ const HomePage = () => {
   }, []);
   return (
     <div>
-      <Helmet>
-        <title>Home</title>
-      </Helmet>
       <BannerSection></BannerSection>
       <VolunteerNeedsSection></VolunteerNeedsSection>
       {/* extra section one  */}
