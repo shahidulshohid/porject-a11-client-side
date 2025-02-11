@@ -38,10 +38,10 @@ const ManageMyPostPage = () => {
   };
 
   return (
-    <div className="my-12">
+    <div className="mt-12">
       {/* first section  */}
       <section>
-        <h3 className="text-4xl text-center text-white font-bold mb-6">
+        <h3 className="text-2xl md:text-4xl text-center text-white font-bold mb-5">
           My volunteer need post
         </h3>
         <div className="bg-[#F4F3F0] rounded-xl py-6 lg:w-8/12 mx-auto">
@@ -69,7 +69,7 @@ const ManageMyPostPage = () => {
             </table>
           </div>
           {manageData.length === 0 ? (
-            <h1 className="text-center text-3xl md:text-6xl font-bold text-purple-600 my-24">
+            <h1 className="text-center text-2xl md:text-4xl font-bold text-black my-24">
               My Volunteer Need Post is Empty
             </h1>
           ) : (
@@ -79,7 +79,7 @@ const ManageMyPostPage = () => {
       </section>
       {/* second section  */}
       <section className="mt-12">
-        <h3 className="text-4xl text-center text-white font-bold mb-6">
+        <h3 className="text-2xl md:text-4xl text-center text-white font-bold mb-5">
         My Volunteer Request Post
         </h3>
         <div className="bg-[#F4F3F0] rounded-xl py-6 lg:w-8/12 mx-auto">
@@ -107,7 +107,7 @@ const ManageMyPostPage = () => {
             </table>
           </div>
           {requestData.length === 0 ? (
-            <h1 className="text-center text-3xl md:text-6xl font-bold text-purple-600 my-24">
+            <h1 className="text-center text-2xl md:text-4xl font-bold text-black my-24">
               My Volunteer Request post is Empty
             </h1>
           ) : (
