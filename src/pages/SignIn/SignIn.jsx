@@ -44,12 +44,13 @@ const SignIn = () => {
     }
   };
   return (
-    <div className=" bg-blue-500">
-      <Link to="/" className="px-5">
-        <button className="flex items-center gap-2 px-3 py-2 bg-white text-black rounded-lg font-semibold"><FaArrowLeftLong className="mt-1"/> Back to home</button>
+    <div className=" bg-blue-500 min-h-screen">
+      <Link to="/">
+        <div className="pt-6 pl-6 md:pt-12 md:pl-12">
+        <button className="flex items-center gap-2 px-3 py-2 bg-white text-green-700 rounded-lg font-semibold"><FaArrowLeftLong className="mt-1"/> Back to home</button>
+        </div>
       </Link>
-
-      <div className="hero min-h-screen">
+      <div className="hero">
       <div className="hero-content flex-col lg:flex-row-reverse gap-6 md:gap-10 lg:gap-24">
         <div className="w-96">
           <Lottie animationData={signInLottieData}></Lottie>
