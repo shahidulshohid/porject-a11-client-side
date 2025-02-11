@@ -16,7 +16,7 @@ const Blogs = ({item}) => {
               {description}
             </p>
             <Link to={`/blogs/${id}`}>
-              <button className="px-4 py-2 rounded-lg bg-green-500 text-lg border-green-500 hover:text-green-60 text-white mt-3 absolute bottom-4">
+              <button className="px-4 py-2 rounded-lg bg-green-500 hover:bg-green-600 text-lg border-green-500 hover:text-green-60 text-white mt-3 absolute bottom-4">
                 See More
               </button>
             </Link>
