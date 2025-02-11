@@ -4,19 +4,19 @@ const Blogs = ({item}) => {
   
   return (
     <div id="blogs">
-      <div>
-          <div className="w-full h-[280px]">
-            <img className="w-full h-[280px]" src={image} alt="" />
+      <div className="bg-white relative">
+          <div className="w-full h-[280px] overflow-hidden">
+            <img className="w-full h-[280px] hover:scale-125 duration-300 transition-transform" src={image} alt="" />
           </div>
-          <div>
+          <div className="p-4">
             <h3 className="text-xl font-semibold text-black mt-2">
               {title}
             </h3>
-            <p className="text-white">
+            <p className="text-black mt-2 pb-16">
               {description}
             </p>
             <Link to={`/blogs/${id}`}>
-              <button className="btn bg-green-500 text-lg border-green-500 hover:text-black text-white mt-3">
+              <button className="px-4 py-2 rounded-lg bg-green-500 text-lg border-green-500 hover:text-green-60 text-white mt-3 absolute bottom-4">
                 See More
               </button>
             </Link>

@@ -5,7 +5,7 @@ import img1 from "../../assets/review1.jpg";
 import img2 from "../../assets/review2.jpg";
 import img4 from "../../assets/review4.jpg";
 import { Fade } from "react-awesome-reveal";
-import 'animate.css';
+import "animate.css";
 import Blogs from "../../components/Blogs/Blogs";
 import ContactSection from "../../components/ContactSection/ContactSection";
 
@@ -26,15 +26,15 @@ const HomePage = () => {
       <VolunteerNeedsSection></VolunteerNeedsSection>
       {/* extra section one  */}
       <section id="faq">
-          <div className="w-full md:w-6/12 lg:w-5/12 mx-auto p-3 mb-6 rounded-xl">
-            <h3 className="text-3xl text-white text-center font-bold mb-1">
-              Volunteering FAQs{" "}
-            </h3>
-            <p className="text-center text-white -mb-3">
-              Got a question about volunteering? We’ve answered some of the
-              frequently asked questions from volunteers here:
-            </p>
-          </div>
+        <div className="w-full md:w-6/12 lg:w-5/12 mx-auto p-3 mb-6 rounded-xl">
+          <h3 className="text-3xl text-white text-center font-bold mb-1">
+            Volunteering FAQs{" "}
+          </h3>
+          <p className="text-center text-white -mb-3">
+            Got a question about volunteering? We’ve answered some of the
+            frequently asked questions from volunteers here:
+          </p>
+        </div>
 
         <div className="join join-vertical w-full bg-white">
           <div className="collapse collapse-arrow join-item border-base-300 border">
@@ -162,14 +162,14 @@ const HomePage = () => {
       </section>
       {/* extra section two  */}
       <section className="my-12 w-11/12 mx-auto" id="reviews mt-2">
-          <h3 className="text-3xl text-white text-center font-bold">Reviews</h3>
-          <div className="w-full md:w-6/12 lg:w-5/12 mx-auto">
+        <h3 className="text-3xl text-white text-center font-bold">Reviews</h3>
+        <div className="w-full md:w-6/12 lg:w-5/12 mx-auto">
           <p className="text-center text-white mb-4">
             A reviews volunteer is someone who dedicates their time and effort
-            to help gather, write, evaluate, or manage reviews for
-            various purposes
+            to help gather, write, evaluate, or manage reviews for various
+            purposes
           </p>
-          </div>
+        </div>
         <Fade direction="up">
           <div className="lg:flex justify-center gap-12">
             <div className="w-full mb-6 lg:mb-0 lg:w-4/12 bg-white p-4 rounded-xl">
@@ -239,9 +239,12 @@ const HomePage = () => {
       </section>
       {/* blogs section  */}
       <div className="my-16">
-        <h3 className="text-3xl text-center text-white font-bold mb-6">
-          Blogs
-        </h3>
+        <h3 className="text-3xl text-center text-white font-bold">Blogs</h3>
+        <p className="mb-6 mt-1 text-white md:w-8/12 lg:w-5/12 mx-auto text-center">
+          Volunteer management builds a sustainable workforce through structured
+          processes and engagement. Leveraging technology enhances impact while
+          creating meaningful volunteer experiences.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {blog?.map((item) => (
             <Blogs key={item.id} item={item}></Blogs>
