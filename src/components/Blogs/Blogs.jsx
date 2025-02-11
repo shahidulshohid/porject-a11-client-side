@@ -4,7 +4,7 @@ const Blogs = ({item}) => {
   
   return (
     <div id="blogs">
-      <div className="bg-white relative">
+      <div className="bg-white relative h-full">
           <div className="w-full h-[280px] overflow-hidden">
             <img className="w-full h-[280px] hover:scale-125 duration-300 transition-transform" src={image} alt="" />
           </div>
