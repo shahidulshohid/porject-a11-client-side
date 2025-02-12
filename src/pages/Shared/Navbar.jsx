@@ -91,7 +91,7 @@ const Navbar = () => {
         <h1 className="hidden md:flex text:xl lg:text-2xl font-bold">
           Volunteer
         </h1>
-        <span className="hidden md:flex ">Management</span>
+        <span className="hidden md:flex">Management</span>
         </div>
         </Link>
       </div>

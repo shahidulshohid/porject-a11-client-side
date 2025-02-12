@@ -37,7 +37,7 @@ function ContactSection() {
         Contact with us
       </h3>
       <p className="text-white md:w-6/12 lg:w-5/12 mx-auto text-center mb-6 px-2">
-      Don't hesitate to contact us. Feel free to get in touch with me. I am always open to discussing new
+      Don't hesitate to contact with us. Feel free to get in touch with us. I am always open to discussing new
         projects, creative ideas or opportunities to be part of your visions.
       </p>
       <div className="bg-white my-12px-6 py-12 rounded-xl">
