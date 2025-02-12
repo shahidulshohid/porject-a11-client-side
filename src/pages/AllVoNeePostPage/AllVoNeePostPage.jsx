@@ -4,6 +4,7 @@ import { CiViewTable } from "react-icons/ci";
 import { TfiLayoutGrid3 } from "react-icons/tfi";
 import ShowAllVolunteerPostPage from "../../components/ShowAllVolunteerPostPage/ShowAllVolunteerPostPage";
 import AllVolunteerTableLayout from "../AllVolunteerTableLayout/AllVolunteerTableLayout";
+import LoadingPage from "../../components/LoadingPage/LoadingPage";
 
 const AllVoNeePostPage = () => {
   const [volunteerNeedsData, setVolunteerNeedsData] = useState([]);
@@ -27,8 +28,11 @@ const AllVoNeePostPage = () => {
   const resetFn = () => {
     setSearch("");
   };
+  if(volunteerNeedsData.length === 0){
+    return <LoadingPage></LoadingPage>
+  }
   return (
-    <div className="my-12 max-w-7xl mx-auto">
+    <div className="mt-12 max-w-7xl mx-auto">
       <div className="flex justify-center lg:justify-between items-center">
         <h3 className="hidden md:flex text-3xl text-white font-bold">
           All Volunteer Needs Post
