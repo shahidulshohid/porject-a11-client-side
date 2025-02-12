@@ -1,14 +1,25 @@
+
+
+import React, { useState, useEffect } from "react";
+import { FadeLoader } from "react-spinners";
+
 const LoadingPage = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 2000);
+  }, []);
+
   return (
-    <div className="flex justify-center items-center h-screen">
-      <div className="text-center">
-        <span className="loading loading-bars loading-xs"></span>
-        <span className="loading loading-bars loading-sm"></span>
-        <span className="loading loading-bars loading-md"></span>
-        <span className="loading loading-bars loading-lg"></span>
-      </div>
+    <div className="flex justify-center items-center min-h-screen">
+      {loading ? (
+        <FadeLoader color="#36d7b7" size={15} />
+      ) : (
+        " "
+      )}
     </div>
   );
 };
 
 export default LoadingPage;
+
