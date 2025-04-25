@@ -79,7 +79,7 @@ const ManageMyPostPage = () => {
       </section>
       {/* second section  */}
       <section className="mt-12">
-        <h3 className="text-2xl md:text-4xl text-center text-white font-bold mb-5">
+        <h3 className="text-2xl md:text-4xl text-center dark:text-white font-bold mb-5">
         My Volunteer Request Post
         </h3>
         <div className="bg-[#F4F3F0] rounded-xl py-6 lg:w-8/12 mx-auto">
