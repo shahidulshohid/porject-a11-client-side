@@ -81,7 +81,7 @@ const Navbar = () => {
             {menu}
           </ul>
         </div>
-        <Link to='/' className="flex gap-3">
+        <Link to='/' className="flex items-center gap-3">
         <img
           className="w-8 h-8 md:w-12 md:h-12 rounded-full"
           src={volunteerLogo}
@@ -89,9 +89,8 @@ const Navbar = () => {
         />
         <div>
         <h1 className="hidden md:flex text:xl lg:text-2xl font-bold">
-          Volunteer
+          HopeChain
         </h1>
-        <span className="hidden md:flex">Management</span>
         </div>
         </Link>
       </div>
