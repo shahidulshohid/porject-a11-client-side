@@ -34,7 +34,7 @@ const AllVoNeePostPage = () => {
   return (
     <div className="mt-12 max-w-7xl mx-auto">
       <div className="flex justify-center lg:justify-between items-center">
-        <h3 className="hidden md:flex text-3xl text-white font-bold">
+        <h3 className="hidden md:flex text-3xl dark:text-white font-bold">
           All Volunteer Needs Post
         </h3>
         <div className="flex p-1 overflow-hidden focus-within:ring-opacity-40 focus-within:border-blue-400 focus-within:ring-blue-300">

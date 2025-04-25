@@ -4,7 +4,7 @@ import FooterPage from "../pages/Shared/FooterPage";
 
 const MainLayout = () => {
     return (
-        <div className="bg-slate-300 dark:bg-gray-800">
+        <div className="bg-slate-100 dark:bg-gray-800">
         <div>
             <Navbar></Navbar>
             <Outlet></Outlet>

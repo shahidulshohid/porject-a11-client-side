@@ -8,12 +8,12 @@ const AboutPage = () => {
 
   return (
     <div className="mt-12 max-w-7xl mx-auto">
-      <h2 className="text-3xl font-bold text-center text-white mb-1">About Us</h2>
-      <p className="text-center text-white text-lg mb-8">
+      <h2 className="text-3xl font-bold text-center dark:text-white mb-1">About Us</h2>
+      <p className="text-center dark:text-white text-lg mb-8">
         Building Communities, One Volunteer at a Time
       </p>
       <div className="lg:flex justify-between gap-5">
-        <div className="w-full lg:w-1/2 space-y-3 px-4 mb-6 lg:mb-0 bg-white">
+        <div className="w-full lg:w-1/2 space-y-3 px-4 mb-6 lg:mb-0 bg-white rounded-lg">
           <div className="mt-3">
             <h3 className=" text-gray-700 font-bold text-xl"> Empowering Communities</h3>
             <p className="text-gray-500">
@@ -43,7 +43,7 @@ const AboutPage = () => {
           </div>
         </div>
         <div className="w-full lg:w-1/2">
-          <img src={volunteerMission} alt="" />
+          <img src={volunteerMission} alt="" className="rounded-lg"/>
         </div>
       </div>
     </div>
