@@ -13,7 +13,7 @@ const AboutPage = () => {
         Building Communities, One Volunteer at a Time
       </p>
       <div className="lg:flex justify-between gap-5">
-        <div className="w-full lg:w-1/2 space-y-3 text-center px-4 mb-6 lg:mb-0">
+        <div className="w-full lg:w-1/2 space-y-3 text-center px-4 mb-6 lg:mb-0 bg-white">
           <div>
             <h3 className=" text-gray-700 font-bold text-xl"> Empowering Communities</h3>
             <p className="text-white">
