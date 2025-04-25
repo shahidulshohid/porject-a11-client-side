@@ -13,10 +13,10 @@ const AboutPage = () => {
         Building Communities, One Volunteer at a Time
       </p>
       <div className="lg:flex justify-between gap-5">
-        <div className="w-full lg:w-1/2 space-y-3 text-center px-4 mb-6 lg:mb-0 bg-white">
+        <div className="w-full lg:w-1/2 space-y-3 px-4 mb-6 lg:mb-0 bg-white">
           <div>
             <h3 className=" text-gray-700 font-bold text-xl"> Empowering Communities</h3>
-            <p className="text-white">
+            <p className="text-gray-500">
               Our mission is to create opportunities for individuals to
               contribute to their communities meaningfully. Through
               volunteering, we aim to empower people, strengthen bonds, and
@@ -25,19 +25,19 @@ const AboutPage = () => {
           </div>
           <div>
             <h3 className=" text-gray-700 font-bold text-xl">Driving Change Through Action</h3>
-            <p className="text-white">
+            <p className="text-gray-500">
             Our mission is to drive meaningful change by connecting volunteers with impactful causes. We believe every small act of kindness contributes to a larger movement for social good
             </p>
           </div>
           <div>
             <h3 className=" text-gray-700 font-bold text-xl">Building a Better World Together</h3>
-            <p className="text-white">
+            <p className="text-gray-500">
             We are dedicated to building a better world by harnessing the power of volunteerism. Our mission is to unite individuals from all walks of life to create sustainable solutions and enrich the lives of those we serve
             </p>
           </div>
           <div>
             <h3 className=" text-gray-700 font-bold text-xl">Inspiring Hope and Action</h3>
-            <p className="text-white">
+            <p className="text-gray-500">
             Our mission is to inspire hope and encourage action. We believe that together, through volunteering, we can overcome challenges, uplift communities, and create a more equitable world.
             </p>
           </div>
