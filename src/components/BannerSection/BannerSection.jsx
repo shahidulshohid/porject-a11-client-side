@@ -38,7 +38,7 @@ const BannerSection = () => {
             }}
           >
             <div>
-              <h3 className="text-white text-2xl md:text-4xl font-bold text-center">
+              <h3 className="text-black text-2xl md:text-4xl font-bold text-center">
                 Collaborative Volunteer Management Made Simple
               </h3>
             </div>
@@ -56,7 +56,7 @@ const BannerSection = () => {
             }}
           >
             <div>
-              <h3 className="text-white text-2xl md:text-4xl font-bold text-center">
+              <h3 className="text-black text-2xl md:text-4xl font-bold text-center">
               Organized Giving Through Volunteer Collaboration
               </h3>
             </div>
@@ -74,7 +74,7 @@ const BannerSection = () => {
             }}
           >
             <div>
-              <h3 className="text-white text-2xl md:text-4xl font-bold text-center">
+              <h3 className="text-black text-2xl md:text-4xl font-bold text-center">
               Maximizing Volunteer Time for Community Benefits
               </h3>
             </div>
@@ -92,7 +92,7 @@ const BannerSection = () => {
             }}
           >
             <div>
-              <h3 className="text-white text-2xl md:text-4xl font-bold text-center">
+              <h3 className="text-black text-2xl md:text-4xl font-bold text-center">
               Organized Giving Through Volunteer Collaboration
               </h3>
             </div>
@@ -110,7 +110,7 @@ const BannerSection = () => {
             }}
           >
             <div>
-              <h3 className="text-white text-2xl md:text-4xl font-bold text-center">
+              <h3 className="text-black text-2xl md:text-4xl font-bold text-center">
               Collaborative Volunteer Management Made Simple
               </h3>
             </div>

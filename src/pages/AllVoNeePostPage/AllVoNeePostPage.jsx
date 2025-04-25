@@ -60,8 +60,8 @@ const AllVoNeePostPage = () => {
         </div>
       </div>
       <div className="flex items-center justify-center gap-5 mt-3 mb-5">
-          <button onClick={()=> changeLayout(false)} className="btn"><CiViewTable size={25} /></button>
-          <button onClick={()=> changeLayout(true)} className="btn"><TfiLayoutGrid3 size={17}/></button>
+          <button onClick={()=> changeLayout(false)} className="btn bg-green-500 dark:bg-white"><CiViewTable size={25} /></button>
+          <button onClick={()=> changeLayout(true)} className="btn bg-green-500 dark:bg-white"><TfiLayoutGrid3 size={17}/></button>
         </div>
       {layout ? (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-3 gap-5">
