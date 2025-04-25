@@ -33,10 +33,10 @@ function ContactSection() {
 
   return (
     <div className="" id="contact">
-      <h3 className="text-3xl  text-white font-bold text-center">
+      <h3 className="text-3xl dark:text-white font-bold text-center">
         Contact with us
       </h3>
-      <p className="text-white md:w-6/12 lg:w-5/12 mx-auto text-center mb-6 px-2">
+      <p className="md:w-6/12 lg:w-5/12 mx-auto dark:text-white text-center mb-6 px-2">
       Don't hesitate to contact with us. Feel free to get in touch with us. I am always open to discussing new
         projects, creative ideas or opportunities to be part of your visions.
       </p>

@@ -28,10 +28,10 @@ const HomePage = () => {
         {/* extra section one  */}
         <section id="faq">
           <div className="w-full md:w-6/12 lg:w-5/12 mx-auto p-3 mb-6 rounded-xl">
-            <h3 className="text-3xl text-white text-center font-bold mb-1">
+            <h3 className="text-3xl dark:text-white text-center font-bold mb-1">
               Volunteering FAQs{" "}
             </h3>
-            <p className="text-center text-white -mb-3">
+            <p className="text-center dark:text-white -mb-3">
               Got a question about volunteering? We’ve answered some of the
               frequently asked questions from volunteers here:
             </p>
@@ -166,9 +166,9 @@ const HomePage = () => {
         </section>
         {/* extra section two  */}
         <section className="my-12 w-11/12 mx-auto" id="reviews">
-          <h3 className="text-3xl text-white text-center font-bold">Reviews</h3>
+          <h3 className="text-3xl dark:text-white text-center font-bold">Reviews</h3>
           <div className="w-full md:w-6/12 lg:w-5/12 mx-auto">
-            <p className="text-center text-white mb-6">
+            <p className="text-center dark:text-white mb-6">
               A reviews volunteer is someone who dedicates their time and effort
               to help gather, write, evaluate, or manage reviews for various
               purposes
@@ -243,8 +243,8 @@ const HomePage = () => {
         </section>
         {/* blogs section  */}
         <div className="my-16">
-          <h3 className="text-3xl text-center text-white font-bold">Blogs</h3>
-          <p className="mb-5 mt-1 text-white md:w-8/12 lg:w-5/12 mx-auto text-center px-4">
+          <h3 className="text-3xl dark:text-white text-center font-bold">Blogs</h3>
+          <p className="mb-5 mt-1 dark:text-white md:w-8/12 lg:w-5/12 mx-auto text-center px-4">
             Volunteer management builds a sustainable workforce through
             structured processes and engagement. Leveraging technology enhances
             impact while creating meaningful volunteer experiences.
